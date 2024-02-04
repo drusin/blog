@@ -1,7 +1,6 @@
 name: Build Eleventy
 on:
-  - workflow_dispatch
-  - push:
+  push:
     branches:
       - main
 
