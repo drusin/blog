@@ -1,0 +1,29 @@
+name: Deploy GH Pages
+
+on:
+  push: 
+    # trigger when something is pushed to the branch main
+    branches: [ "main" ]
+  # make it possible to trigger manually
+  workflow_dispatch: 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # checkout the branch
+      - uses: actions/checkout@v3
+
+      # run npm ci and npm run build
+      - name: npm ci & build
+        uses: actions/setup-node@v3
+      - run: npm ci
+      - run: npm run build
+
+      # deploy the content of _site to the branch gh-pages (default setting)
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: /_site
