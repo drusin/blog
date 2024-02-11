@@ -20,6 +20,7 @@ jobs:
         uses: actions/setup-node@v3
       - run: npm ci
       - run: npm run build
+      - run: ls -al
 
       # deploy the content of _site to the branch gh-pages (default setting)
       - name: deploy
