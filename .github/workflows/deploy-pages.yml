@@ -17,10 +17,9 @@ jobs:
 
       # run npm ci and npm run build
       - name: npm ci & build
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
       - run: npm ci
       - run: npm run build
-      - run: realpath _site
 
       # deploy the content of _site to the branch gh-pages (default setting)
       - name: deploy
