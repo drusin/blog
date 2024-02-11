@@ -5,9 +5,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   return {
     dir: {
-      input: "content",
-      // use GitHub's preferred output folder
-      output: "docs"
+      input: "content"
     },
     // prefix used by GitHub Pages, usually your project name
     pathPrefix: "/blog/"
