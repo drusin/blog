@@ -57,3 +57,7 @@ Now you can delete the obsolete `_pages` folder, commit your changes and push to
 
 ### A bit more involved, but also more elegant: use a GitHub Workflow to deploy Pages
 The problem with the solution above is that you have to do the building yourself pushing of the built page yourself. With 11ty it takes seconds, so it's not too bad, but a nicer approach would be to put the build folder on `.gitignore` and let GitHub build the project automatically everytime something to the main branch is pushed.
+
+1. first
+2. second
+3. third
