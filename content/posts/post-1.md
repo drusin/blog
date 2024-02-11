@@ -21,6 +21,8 @@ Below you will find a few step-by-step instructions on how to deal with this iss
 You have an 11ty project (e.g. the [11ty base blog template](https://github.com/11ty/eleventy-base-blog)) hosted in a public repository on GitHub and cloned it locally to your PC. The project works locally when running `npx @11ty/eleventy --serve`.
 
 ### Easiest: using the `docs` folder on your main branch
+One of the easiest ways to host a static website is to put it in a folder named `docs` and let GitHub find it.
+
 1. Setup GitHub Pages for the repository:
     1. (Repository) Settings -> Code and automation / Pages
     2. Source: `Deploy from a branch`
@@ -37,7 +39,7 @@ You have an 11ty project (e.g. the [11ty base blog template](https://github.com/
       return {
         dir: {
         // use GitHub's preferred output folder
-        output: "docs"
+          output: "docs"
         },
         // prefix used by GitHub Pages, usually your project name
         pathPrefix: "/blog/"
@@ -52,3 +54,6 @@ You have an 11ty project (e.g. the [11ty base blog template](https://github.com/
 4. In the `docs` folder, add an empty file named `.nojekyll` (again the `.` at the beginning is important) to tell GitHub that it shouldn't treat your webpage as a Jekyll project
 
 Now you can delete the obsolete `_pages` folder, commit your changes and push to GitHub. A few minutes after pushing, you should see a new deployment for your project on the GitHub webpage.
+
+### A bit more involved, but also more elegant: use a GitHub Workflow to deploy Pages
+The problem with the solution above is that you have to do the building yourself pushing of the built page yourself. With 11ty it takes seconds, so it's not too bad, but a nicer approach would be to put the build folder on `.gitignore` and let GitHub build the project automatically everytime something to the main branch is pushed.
