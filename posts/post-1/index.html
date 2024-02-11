@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>How to setup your 11ty project for GitHub Pages</title>
+    </head>
+    <body>
+        <header>
+            <h1>How to setup your 11ty project for GitHub Pages</h1>
+        </header>
+        <main>
+            <p><a href="https://www.11ty.dev/">11ty</a> is an awesome (and super fast) static site generator and <a href="https://pages.github.com/">GitHub Pages</a> is a nice and free way to host a static website. The <a href="https://www.11ty.dev/docs/deployment/">11ty Deployment Documentation</a> even mentions GitHub Pages, but doesn't mention the small config changes you have to do to make your 11ty page work there.</p>
+<h2>GitHub Pages?</h2>
+<p>You can enable the Pages functionality for public repos in the repository settings. You can choose which branch should be deployed and if your static page is directly on the root or in the <code>docs</code> folder. The overall process is very straightforward and well documented <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">here</a>. If you need some more complicated build steps, you can also deploy your page via custom actions.</p>
+<h2>What is the problem?</h2>
+<p>11ty creates static links to internal pages and the browser expects them to be top-level, which they are not on GitHub Pages. So we need to make 11ty generate links with the right prefix.</p>
+<p>Some more descritpive explanation:<br>
+In theory, you can push the content of your 11ty <code>_site</code> folder to a pages-enabled respository (or configure 11ty to use the <code>docs</code> folder) and it after a small build process it will be serverd on <code>https://[your GitHub username].github.io/[repository name]/</code>. And if you try it out, the main page will work, but all the internal links will be broken and result in a <code>404</code> on GitHub Pages' side.</p>
+<p>At the time of writing, googling for <code>11ty github pages</code> wasn't very helpful, I had to search through the <a href="https://www.11ty.dev/blog/discord/">11ty discord</a> to understand what the actual problem was. Afterwards it still took me some trying out and some reading through the documentation to fix the problem for this blog.</p>
+<h2>Fixing the problem</h2>
+<p>Below you will find a few step-by-step instructions on how to deal with this isssue, depending on how you want your project to be set up:</p>
+<h3>Prerequisites:</h3>
+<p>You have an 11ty project (e.g. the <a href="https://github.com/11ty/eleventy-base-blog">11ty base blog template</a>) hosted in a public repository on GitHub and cloned it locally to your PC. The project works locally when running <code>npx @11ty/eleventy --serve</code>.</p>
+<h3>Easiest: using the <code>docs</code> folder on your main branch</h3>
+<p>One of the easiest ways to host a static website is to put it in a folder named <code>docs</code> and let GitHub find it.</p>
+<ol>
+<li>Setup GitHub Pages for the repository:
+<ol>
+<li>(Repository) Settings -&gt; Code and automation / Pages</li>
+<li>Source: <code>Deploy from a branch</code></li>
+<li>Branch: <code>main</code> (or whichever you want to your webpage to be hosted from)</li>
+<li>Folder: <code>docs</code></li>
+</ol>
+</li>
+<li>Change the 11ty config in your local clone of the project:
+<ol>
+<li>If not present yet, create an 11ty settings file named <code>.eleventy.js</code> (the <code>.</code> at the beginning is important) in the root of your project with the following content:</li>
+</ol>
+<pre><code class="language-js">const { EleventyHtmlBasePlugin } = require(&quot;@11ty/eleventy&quot;);
+
+module.exports = function(eleventyConfig) {
+  // necessary to automatically prepend the prefix to internal links
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+  return {
+    dir: {
+    // use GitHub's preferred output folder
+      output: &quot;docs&quot;
+    },
+    // prefix used by GitHub Pages, usually your project name
+    pathPrefix: &quot;/blog/&quot;
+  }
+};
+</code></pre>
+<ol start="2">
+<li>Make sure that the value of <code>pathPrefix</code> above matches the name of your GitHub repository</li>
+</ol>
+</li>
+<li>Verify that everything works locally:
+<ol>
+<li>Run <code>npx @11ty/eleventy --serve</code> in your project's root folder</li>
+<li>Observe that the webpage is now served on <code>localhost:8080/blog</code> (replace <code>blog</code> with the <code>pathPrefix</code> you set)</li>
+<li>Veryfy that all local links are still working (might need to reload the page without cache, <code>SHIFT + F5</code> in Chrome, <code>CTRL + F5</code> in Firefox)</li>
+</ol>
+</li>
+<li>In the <code>docs</code> folder, add an empty file named <code>.nojekyll</code> (again the <code>.</code> at the beginning is important) to tell GitHub that it shouldn't treat your webpage as a Jekyll project</li>
+</ol>
+<p>Now you can delete the obsolete <code>_pages</code> folder, commit your changes and push to GitHub. A few minutes after pushing, you should see a new deployment for your project on the GitHub webpage.</p>
+<h3>A bit more involved, but also more elegant: use a GitHub Workflow to deploy Pages</h3>
+<p>The problem with the solution above is that you have to do the building yourself pushing of the built page yourself. With 11ty it takes seconds, so it's not too bad, but a nicer approach would be to put the build folder on <code>.gitignore</code> and let GitHub build the project automatically everytime something to the main branch is pushed.</p>
+
+        </main>
+    </body>
+</html>
