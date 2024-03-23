@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
         <title>My second post</title>
     </head>
     <body>
+        <script lang="js">
+            const themeStr = 'data-theme';
+
+            if (localStorage.getItem(themeStr)) {
+                document.documentElement.setAttribute('data-theme', localStorage.getItem(themeStr));
+            }
+
+            function toggleTheme() {
+                let theme;
+                if (!localStorage.getItem(themeStr)) {
+                    theme = window.matchMedia('(prefers-color-scheme: dark)') ? 'light' : 'dark';
+                }
+                else {
+                    theme = localStorage.getItem(themeStr) === 'dark' ? 'light' : 'dark';
+                }
+                document.documentElement.setAttribute('data-theme', theme);
+                localStorage.setItem(themeStr, theme);
+            }
+        </script>
         <header>
             <h1>My second post</h1>
+            <button onclick="toggleTheme()">☼</button>
         </header>
         <main>
             
