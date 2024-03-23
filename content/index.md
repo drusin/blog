@@ -4,6 +4,5 @@ layout: layout.html
 ---
 {% for post in collections.post %}
 ## [{{ post.data.title }}]({{ post.url }})
-
-{{ post.content }}
+{{ post.content | split: '</p>' | first }}
 {% endfor %}

@@ -1,7 +1,7 @@
 ---
 title: How to setup your 11ty project for GitHub Pages
 ---
-[11ty](https://www.11ty.dev/) is an awesome (and super fast) static site generator and [GitHub Pages](https://pages.github.com/) is a nice and free way to host a static website. The [11ty Deployment Documentation](https://www.11ty.dev/docs/deployment/) even mentions GitHub Pages, but doesn't mention the small config changes you have to do to make your 11ty page work there.
+[11ty](https://www.11ty.dev/) is an awesome (and super fast) static site generator and [GitHub Pages](https://pages.github.com/) is a nice and free way to host a static website. The [11ty Deployment Documentation](https://www.11ty.dev/docs/deployment/) even mentions GitHub Pages, but doesn't mention the small config changes you have to do to make your 11ty page work there. This post goes over three possible 11ty setups and how to make them work with GitHub Pages.
 
 ## GitHub Pages?
 You can enable the Pages functionality for public repos in the repository settings. You can choose which branch should be deployed and if your static page is directly on the root or in the `docs` folder. The overall process is very straightforward and well documented [here](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site). If you need some more complicated build steps, you can also deploy your page via custom actions.
