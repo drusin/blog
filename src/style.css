@@ -1,0 +1,16 @@
+#main-page-nav {
+    margin-top: 0.45rem;
+}
+
+#dates {
+    margin-bottom: 2rem;
+}
+
+nav ul li:first-of-type {
+    padding-left: 0;
+}
+
+/* overwrite pico */
+nav ul:first-of-type {
+    margin-left: 0;
+}

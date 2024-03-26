@@ -3,35 +3,37 @@
 <script src="/src/toggle-theme.js"></script>
 
 <head>
-    <link rel="stylesheet" href="/pico.min.css" />
+    {% render 'styles' %}
     <title>{{ title }}</title>
 </head>
 
 <body>
-    <header class="container">
-        <nav>
-            <ul>
-                <nav aria-label="breadcrumb">
-                    <ul>
-                        <li><strong><a href="/">Dawid's blog</a></strong></li>
-                        <li><h1>{{ title }}</h1></li>
-                    </ul>
-                </nav>
-            </ul>
-            <ul>
-                <li><button onclick="toggleTheme()" class="outline contrast">💡</button></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="container">
-        <p><em>
-            Published on: {{ published | date: "%Y-%m-%d" }}
-            {% if modified %}
-            | Last modified on: {{ modified | date: "%Y-%m-%d" }}
-            {% endif %}
-        </p></em>
-        {{ content }}
-    </main>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <nav aria-label="breadcrumb">
+                        <ul>
+                            <li><strong><a href="/">Dawid's blog</a></strong></li>
+                            <li><h1>{{ title }}</h1></li>
+                        </ul>
+                    </nav>
+                </ul>
+                <ul>
+                    <li><button onclick="toggleTheme()" class="outline contrast">💡</button></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <p id="dates"><em>
+                Published on: {{ published | date: "%Y-%m-%d" }}
+                {% if modified %}
+                | Last modified on: {{ modified | date: "%Y-%m-%d" }}
+                {% endif %}
+            </p></em>
+            {{ content }}
+        </main>
+    </div>
 </body>
 
 </html>
