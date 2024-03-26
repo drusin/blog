@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<script src="/src/toggle-theme.js"></script>
+
+<head>
+    <link rel="stylesheet" href="/pico.min.css" />
+    <title>Dawid's blog</title>
+</head>
+
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                <h1>Dawid's blog</h1>
+            </ul>
+            <ul>
+                <li><button onclick="toggleTheme()" class="outline contrast">💡</button></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main class="container">
+        {{ content }}
+    </main>
+</body>
+
+</html>

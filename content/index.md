@@ -1,7 +1,8 @@
 ---
-layout: layout.html
+layout: layout-main.html
 ---
-{% for post in collections.post %}
+{% assign sorted_posts = collections.post | reverse: "published" %}
+{% for post in sorted_posts | reverse: "published" %}
 ## [{{ post.data.title }}]({{ post.url }})
 {{ post.content | split: '</p>' | first }}
 {% endfor %}
