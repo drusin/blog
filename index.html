@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-        <title>Dawid's blog</title>
-    </head>
-    <body>
-        <script lang="js">
-            const themeStr = 'data-theme';
+<script lang="js">
+    const themeStr = 'data-theme';
 
-            if (localStorage.getItem(themeStr)) {
-                document.documentElement.setAttribute('data-theme', localStorage.getItem(themeStr));
-            }
+    if (theme = localStorage.getItem(themeStr)) {
+        document.documentElement.setAttribute(themeStr, theme);
+    }
 
-            function toggleTheme() {
-                let theme;
-                if (!localStorage.getItem(themeStr)) {
-                    theme = window.matchMedia('(prefers-color-scheme: dark)') ? 'light' : 'dark';
-                }
-                else {
-                    theme = localStorage.getItem(themeStr) === 'dark' ? 'light' : 'dark';
-                }
-                document.documentElement.setAttribute('data-theme', theme);
-                localStorage.setItem(themeStr, theme);
-            }
-        </script>
-        <header>
-            <h1>Dawid's blog</h1>
-            <button onclick="toggleTheme()">☼</button>
-        </header>
-        <main>
-            <h2><a href="/blog/posts/post-1/">How to setup your 11ty project for GitHub Pages</a></h2>
+    function toggleTheme() {
+        let theme;
+        if (!localStorage.getItem(themeStr)) {
+            theme = window.matchMedia('(prefers-color-scheme: dark)') ? 'light' : 'dark';
+        }
+        else {
+            theme = localStorage.getItem(themeStr) === 'dark' ? 'light' : 'dark';
+        }
+        document.documentElement.setAttribute(themeStr, theme);
+        localStorage.setItem(themeStr, theme);
+    }
+</script>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <title>Dawid's blog</title>
+</head>
+
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                
+                <h1>Dawid's blog</h1>
+                
+            </ul>
+        <ul>
+            <li><button onclick="toggleTheme()" class="outline contrast">💡</button></li>
+        </ul>
+        </nav>
+
+    </header>
+    <main class="container">
+        <h2><a href="/blog/posts/post-1/">How to setup your 11ty project for GitHub Pages</a></h2>
 <p><a href="https://www.11ty.dev/">11ty</a> is an awesome (and super fast) static site generator and <a href="https://pages.github.com/">GitHub Pages</a> is a nice and free way to host a static website. The <a href="https://www.11ty.dev/docs/deployment/">11ty Deployment Documentation</a> even mentions GitHub Pages, but doesn't mention the small config changes you have to do to make your 11ty page work there. This post goes over three possible 11ty setups and how to make them work with GitHub Pages.
 </p><h2><a href="/blog/posts/post-2/">My second post</a></h2>
 
-        </main>
-    </body>
+    </main>
+</body>
+
 </html>
