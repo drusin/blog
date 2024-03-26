@@ -3,27 +3,30 @@
 <script src="/blog/src/toggle-theme.js"></script>
 
 <head>
-    <link rel="stylesheet" href="/blog/pico.min.css">
+        <link rel="stylesheet" href="/blog/pico.min.css">
+    <link rel="stylesheet" href="/blog/prism-okaidia.min.css">
+    <link rel="stylesheet" href="/blog/src/style.css">
     <title>Dawid's blog</title>
 </head>
 
 <body>
-    <header class="container">
-        <nav>
-            <ul>
-                <h1>Dawid's blog</h1>
-            </ul>
-            <ul>
-                <li><button onclick="toggleTheme()" class="outline contrast">💡</button></li>
-            </ul>
-        </nav>
-
-    </header>
-    <main class="container">
-        <h2><a href="/blog/posts/11ty_github_pages/">How to setup your 11ty project for GitHub Pages</a></h2>
+    <div class="container">
+        <header>
+            <nav id="main-page-nav">
+                <ul>
+                    <h1>Dawid's blog</h1>
+                </ul>
+                <ul>
+                    <li><button onclick="toggleTheme()" class="outline contrast">💡</button></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2><a href="/blog/posts/11ty_github_pages/">How to setup your 11ty project for GitHub Pages</a></h2>
 <p><a href="https://www.11ty.dev/">11ty</a> is an awesome (and super fast) static site generator and <a href="https://pages.github.com/">GitHub Pages</a> is a nice and free way to host a static website. The <a href="https://www.11ty.dev/docs/deployment/">11ty Deployment Documentation</a> even mentions GitHub Pages, but doesn't mention the small config changes you have to do to make your 11ty page work there. This post goes over three possible 11ty setups and how to make them work with GitHub Pages.
 
-    </p></main>
+        </p></main>
+    </div>
 </body>
 
 </html>

@@ -3,34 +3,37 @@
 <script src="/blog/src/toggle-theme.js"></script>
 
 <head>
-    <link rel="stylesheet" href="/blog/pico.min.css">
+        <link rel="stylesheet" href="/blog/pico.min.css">
+    <link rel="stylesheet" href="/blog/prism-okaidia.min.css">
+    <link rel="stylesheet" href="/blog/src/style.css">
     <title>How to setup your 11ty project for GitHub Pages</title>
 </head>
 
 <body>
-    <header class="container">
-        <nav>
-            <ul>
-                <nav aria-label="breadcrumb">
-                    <ul>
-                        <li><strong><a href="/blog/">Dawid's blog</a></strong></li>
-                        <li><h1>How to setup your 11ty project for GitHub Pages</h1></li>
-                    </ul>
-                </nav>
-            </ul>
-            <ul>
-                <li><button onclick="toggleTheme()" class="outline contrast">💡</button></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="container">
-        <p><em>
-            Published on: 2024-02-09
-            
-            | Last modified on: 2024-02-11
-            
-        </em></p>
-        <p><a href="https://www.11ty.dev/">11ty</a> is an awesome (and super fast) static site generator and <a href="https://pages.github.com/">GitHub Pages</a> is a nice and free way to host a static website. The <a href="https://www.11ty.dev/docs/deployment/">11ty Deployment Documentation</a> even mentions GitHub Pages, but doesn't mention the small config changes you have to do to make your 11ty page work there. This post goes over three possible 11ty setups and how to make them work with GitHub Pages.</p>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <nav aria-label="breadcrumb">
+                        <ul>
+                            <li><strong><a href="/blog/">Dawid's blog</a></strong></li>
+                            <li><h1>How to setup your 11ty project for GitHub Pages</h1></li>
+                        </ul>
+                    </nav>
+                </ul>
+                <ul>
+                    <li><button onclick="toggleTheme()" class="outline contrast">💡</button></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <p id="dates"><em>
+                Published on: 2024-02-09
+                
+                | Last modified on: 2024-02-11
+                
+            </em></p>
+            <p><a href="https://www.11ty.dev/">11ty</a> is an awesome (and super fast) static site generator and <a href="https://pages.github.com/">GitHub Pages</a> is a nice and free way to host a static website. The <a href="https://www.11ty.dev/docs/deployment/">11ty Deployment Documentation</a> even mentions GitHub Pages, but doesn't mention the small config changes you have to do to make your 11ty page work there. This post goes over three possible 11ty setups and how to make them work with GitHub Pages.</p>
 <h2>GitHub Pages?</h2>
 <p>You can enable the Pages functionality for public repos in the repository settings. You can choose which branch should be deployed and if your static page is directly on the root or in the <code>docs</code> folder. The overall process is very straightforward and well documented <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">here</a>. If you need some more complicated build steps, you can also deploy your page via custom actions.</p>
 <h2>What is the problem?</h2>
@@ -45,17 +48,16 @@ In theory, you can push the content of your 11ty <code>_site</code> folder to a 
 <h3>Main part of the fix, needed for all approaches</h3>
 <p>We need to tell 11ty that the webpage will be served from a subfolder.</p>
 <ol>
-<li>If not present yet, create an 11ty settings file named <code>.eleventy.js</code> (the <code>.</code> at the beginning is important) in the root of your project with the following content:<pre><code class="language-js">const { EleventyHtmlBasePlugin } = require(&quot;@11ty/eleventy&quot;);
+<li>If not present yet, create an 11ty settings file named <code>.eleventy.js</code> (the <code>.</code> at the beginning is important) in the root of your project with the following content:<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token punctuation">{</span> EleventyHtmlBasePlugin <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"@11ty/eleventy"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-module.exports = function(eleventyConfig) {
-  // necessary to automatically prepend the prefix to internal links
-  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
-  return {
-    // prefix used by GitHub Pages, usually your project name
-    pathPrefix: &quot;/blog/&quot;
-  }
-};
-</code></pre>
+module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">eleventyConfig</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// necessary to automatically prepend the prefix to internal links</span>
+  eleventyConfig<span class="token punctuation">.</span><span class="token function">addPlugin</span><span class="token punctuation">(</span>EleventyHtmlBasePlugin<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token comment">// prefix used by GitHub Pages, usually your project name</span>
+    <span class="token literal-property property">pathPrefix</span><span class="token operator">:</span> <span class="token string">"/blog/"</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
 </li>
 <li>Make sure that the value of <code>pathPrefix</code> above matches the name of your GitHub repository</li>
 <li>Verify that everything works locally:
@@ -81,21 +83,20 @@ module.exports = function(eleventyConfig) {
 <ol>
 <li>Add <code>dir: { output: &quot;docs&quot; }</code> to the exported function's return value. This is how it could look afterwards:</li>
 </ol>
-<pre><code class="language-js">const { EleventyHtmlBasePlugin } = require(&quot;@11ty/eleventy&quot;);
+<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token punctuation">{</span> EleventyHtmlBasePlugin <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"@11ty/eleventy"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-module.exports = function(eleventyConfig) {
-  // necessary to automatically prepend the prefix to internal links
-  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
-  return {
-    dir: {
-    // use GitHub's preferred output folder
-      output: &quot;docs&quot;
-    },
-    // prefix used by GitHub Pages, usually your project name
-    pathPrefix: &quot;/blog/&quot;
-  }
-};
-</code></pre>
+module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">eleventyConfig</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// necessary to automatically prepend the prefix to internal links</span>
+  eleventyConfig<span class="token punctuation">.</span><span class="token function">addPlugin</span><span class="token punctuation">(</span>EleventyHtmlBasePlugin<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">dir</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// use GitHub's preferred output folder</span>
+      <span class="token literal-property property">output</span><span class="token operator">:</span> <span class="token string">"docs"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// prefix used by GitHub Pages, usually your project name</span>
+    <span class="token literal-property property">pathPrefix</span><span class="token operator">:</span> <span class="token string">"/blog/"</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
 <ol start="2">
 <li>If you run <code>npx @11ty/eleventy</code> the generated html should now end up in the <code>docs</code> folder instead of the <code>_site</code> folder</li>
 </ol>
@@ -121,36 +122,35 @@ module.exports = function(eleventyConfig) {
 <ol>
 <li>Create a file named <code>deploy-pages.yml</code> with the following content:</li>
 </ol>
-<pre><code class="language-yml">name: Deploy GH Pages
+<pre class="language-yml"><code class="language-yml"><span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy GH Pages
 
-on:
-  push: 
-    # trigger when something is pushed to the branch main
-    branches: [ &quot;main&quot; ]
-  # make it possible to trigger manually
-  workflow_dispatch: 
+<span class="token key atrule">on</span><span class="token punctuation">:</span>
+  <span class="token key atrule">push</span><span class="token punctuation">:</span> 
+    <span class="token comment"># trigger when something is pushed to the branch main</span>
+    <span class="token key atrule">branches</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string">"main"</span> <span class="token punctuation">]</span>
+  <span class="token comment"># make it possible to trigger manually</span>
+  <span class="token key atrule">workflow_dispatch</span><span class="token punctuation">:</span> 
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+<span class="token key atrule">jobs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">build</span><span class="token punctuation">:</span>
+    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
 
-    steps:
-      # checkout the branch
-      - uses: actions/checkout@v3
+    <span class="token key atrule">steps</span><span class="token punctuation">:</span>
+      <span class="token comment"># checkout the branch</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v3
 
-      # run npm ci and npm run build
-      - name: npm ci &amp; build
-        uses: actions/setup-node@v4
-      - run: npm ci
-      - run: npm npx @11ty/eleventy
+      <span class="token comment"># run npm ci and npm run build</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> npm ci &amp; build
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v4
+      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm ci
+      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm npx @11ty/eleventy
 
-      # deploy the content of _site to the branch gh-pages (default setting)
-      - name: deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: $
-          publish_dir: ./_site
-</code></pre>
+      <span class="token comment"># deploy the content of _site to the branch gh-pages (default setting)</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> deploy
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> peaceiris/actions<span class="token punctuation">-</span>gh<span class="token punctuation">-</span>pages@v3
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token key atrule">github_token</span><span class="token punctuation">:</span> $
+          <span class="token key atrule">publish_dir</span><span class="token punctuation">:</span> ./_site</code></pre>
 <ol start="2">
 <li>If you you have a custom folder, change the value of <code>publish_dir</code> above accordingly</li>
 </ol>
@@ -167,7 +167,8 @@ jobs:
 </ol>
 <p>Now, after each push to the <code>main</code> branch, at first the <code>Deploy GH Pages</code> workflow will build your page and push it to <code>gh-pages</code> and afterwards the GitHub built-in workflow <code>pages-build-deployment</code> will publish the content on GitHub Pages.</p>
 
-    </main>
+        </main>
+    </div>
 </body>
 
 </html>
