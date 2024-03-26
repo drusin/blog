@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
-        />
-        <title>{{ title | default: "My Blog" }}</title>
-    </head>
-    <body>
-        <script lang="js">
-            const themeStr = 'data-theme';
+<script lang="js">
+    const themeStr = 'data-theme';
 
-            if (localStorage.getItem(themeStr)) {
-                document.documentElement.setAttribute('data-theme', localStorage.getItem(themeStr));
-            }
+    if (theme = localStorage.getItem(themeStr)) {
+        document.documentElement.setAttribute(themeStr, theme);
+    }
 
-            function toggleTheme() {
-                let theme;
-                if (!localStorage.getItem(themeStr)) {
-                    theme = window.matchMedia('(prefers-color-scheme: dark)') ? 'light' : 'dark';
-                }
-                else {
-                    theme = localStorage.getItem(themeStr) === 'dark' ? 'light' : 'dark';
-                }
-                document.documentElement.setAttribute('data-theme', theme);
-                localStorage.setItem(themeStr, theme);
-            }
-        </script>
-        <header>
-            <h1>{{ title | default: "My Blog" }}</h1>
-            <button onclick="toggleTheme()">☼</button>
-        </header>
-        <main>
-            {{ content }}
-        </main>
-    </body>
+    function toggleTheme() {
+        let theme;
+        if (!localStorage.getItem(themeStr)) {
+            theme = window.matchMedia('(prefers-color-scheme: dark)') ? 'light' : 'dark';
+        }
+        else {
+            theme = localStorage.getItem(themeStr) === 'dark' ? 'light' : 'dark';
+        }
+        document.documentElement.setAttribute(themeStr, theme);
+        localStorage.setItem(themeStr, theme);
+    }
+</script>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <title>{{ title | default: "Dawid's blog" }}</title>
+</head>
+
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                {% if title %}
+                <nav aria-label="breadcrumb">
+                    <ul>
+                        <li><strong><a href="/">Dawid's blog</a></strong></li>
+                        <li>{{ title }}</li>
+                    </ul>
+                </nav>
+                {% else %}
+                <h1>Dawid's blog</h1>
+                {% endif %}
+            </ul>
+        <ul>
+            <li><button onclick="toggleTheme()" class="outline contrast">💡</button></li>
+        </ul>
+        </nav>
+
+    </header>
+    <main class="container">
+        {{ content }}
+    </main>
+</body>
+
 </html>

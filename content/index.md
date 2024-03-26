@@ -1,5 +1,4 @@
 ---
-title: Dawid's blog
 layout: layout.html
 ---
 {% for post in collections.post %}
