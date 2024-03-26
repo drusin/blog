@@ -1,24 +1,6 @@
 <!DOCTYPE html>
 <html>
-<script lang="js">
-    const themeStr = 'data-theme';
-
-    if (theme = localStorage.getItem(themeStr)) {
-        document.documentElement.setAttribute(themeStr, theme);
-    }
-
-    function toggleTheme() {
-        let theme;
-        if (!localStorage.getItem(themeStr)) {
-            theme = window.matchMedia('(prefers-color-scheme: dark)') ? 'light' : 'dark';
-        }
-        else {
-            theme = localStorage.getItem(themeStr) === 'dark' ? 'light' : 'dark';
-        }
-        document.documentElement.setAttribute(themeStr, theme);
-        localStorage.setItem(themeStr, theme);
-    }
-</script>
+<script src="/blog/src/toggle-theme.js"></script>
 
 <head>
     <link rel="stylesheet" href="/blog/pico.min.css">
@@ -29,22 +11,19 @@
     <header class="container">
         <nav>
             <ul>
-                
                 <h1>Dawid's blog</h1>
-                
             </ul>
-        <ul>
-            <li><button onclick="toggleTheme()" class="outline contrast">💡</button></li>
-        </ul>
+            <ul>
+                <li><button onclick="toggleTheme()" class="outline contrast">💡</button></li>
+            </ul>
         </nav>
 
     </header>
     <main class="container">
-        <h2><a href="/blog/posts/post-1/">How to setup your 11ty project for GitHub Pages</a></h2>
+        <h2><a href="/blog/posts/11ty_github_pages/">How to setup your 11ty project for GitHub Pages</a></h2>
 <p><a href="https://www.11ty.dev/">11ty</a> is an awesome (and super fast) static site generator and <a href="https://pages.github.com/">GitHub Pages</a> is a nice and free way to host a static website. The <a href="https://www.11ty.dev/docs/deployment/">11ty Deployment Documentation</a> even mentions GitHub Pages, but doesn't mention the small config changes you have to do to make your 11ty page work there. This post goes over three possible 11ty setups and how to make them work with GitHub Pages.
-</p><h2><a href="/blog/posts/post-2/">My second post</a></h2>
 
-    </main>
+    </p></main>
 </body>
 
 </html>
