@@ -3,37 +3,45 @@
 <script src="/blog/src/toggle-theme.js"></script>
 
 <head>
-        <link rel="stylesheet" href="/blog/pico.min.css">
+    <link rel="stylesheet" href="/blog/pico.min.css">
     <link rel="stylesheet" href="/blog/prism-okaidia.min.css">
     <link rel="stylesheet" href="/blog/src/style.css">
-    <title>How to setup your 11ty project for GitHub Pages</title>
+    <title></title>
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <nav>
-                <ul>
-                    <nav aria-label="breadcrumb">
-                        <ul>
-                            <li><strong><a href="/blog/">Dawid's blog</a></strong></li>
-                            <li><h1>How to setup your 11ty project for GitHub Pages</h1></li>
-                        </ul>
-                    </nav>
-                </ul>
-                <ul>
-                    <li><button onclick="toggleTheme()" class="outline contrast">💡</button></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <p id="dates"><em>
-                Published on: 2024-02-09
-                
-                | Last modified on: 2024-02-11
-                
-            </em></p>
-            <p><a href="https://www.11ty.dev/">11ty</a> is an awesome (and super fast) static site generator and <a href="https://pages.github.com/">GitHub Pages</a> is a nice and free way to host a static website. The <a href="https://www.11ty.dev/docs/deployment/">11ty Deployment Documentation</a> even mentions GitHub Pages, but doesn't mention the small config changes you have to do to make your 11ty page work there. This post goes over three possible 11ty setups and how to make them work with GitHub Pages.</p>
+    <div id="page-container" class="container">
+        <div id="content-wrap">
+            <header>
+                <nav>
+                    <ul>
+                        <nav aria-label="breadcrumb">
+                            <ul>
+                                <li><strong><a href="/blog/">Dawid's blog</a></strong></li>
+                                <li><h1>How to setup your 11ty project for GitHub Pages</h1></li>
+                            </ul>
+                        </nav>
+                    </ul>
+                    <ul>
+                        <li><button onclick="toggleTheme()" class="outline contrast">💡</button></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div id="post-header">
+                    <p>
+                        <em>
+Published: 2024-02-09
+ - Last modified: 2024-02-11 
+</em>
+                        <br>
+                        <em>
+
+ #11ty #ci #github #post
+</em>
+                    </p>
+                </div>
+                <p><a href="https://www.11ty.dev/">11ty</a> is an awesome (and super fast) static site generator and <a href="https://pages.github.com/">GitHub Pages</a> is a nice and free way to host a static website. The <a href="https://www.11ty.dev/docs/deployment/">11ty Deployment Documentation</a> even mentions GitHub Pages, but doesn't mention the small config changes you have to do to make your 11ty page work there. This post goes over three possible 11ty setups and how to make them work with GitHub Pages.</p>
 <h2>GitHub Pages?</h2>
 <p>You can enable the Pages functionality for public repos in the repository settings. You can choose which branch should be deployed and if your static page is directly on the root or in the <code>docs</code> folder. The overall process is very straightforward and well documented <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">here</a>. If you need some more complicated build steps, you can also deploy your page via custom actions.</p>
 <h2>What is the problem?</h2>
@@ -167,7 +175,29 @@ module<span class="token punctuation">.</span><span class="token function-variab
 </ol>
 <p>Now, after each push to the <code>main</code> branch, at first the <code>Deploy GH Pages</code> workflow will build your page and push it to <code>gh-pages</code> and afterwards the GitHub built-in workflow <code>pages-build-deployment</code> will publish the content on GitHub Pages.</p>
 
-        </main>
+            </main>
+        </div>
+        <footer>
+            <hr>
+            <nav>
+                <ul>
+                    <li>
+                        About me
+                    </li>
+                </ul>
+                <ul>
+                    <li>Made with ♡</li>
+                    <li>Powered by</li>
+                    <li><a href="https://www.11ty.dev/">11ty</a></li>
+                    <li><a href="https://picocss.com/">Pico CSS</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        Impressum
+                    </li>
+                </ul>
+            </nav>
+        </footer>
     </div>
 </body>
 
