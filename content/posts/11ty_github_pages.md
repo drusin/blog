@@ -2,6 +2,7 @@
 title: How to setup your 11ty project for GitHub Pages
 published: 2024-02-09
 modified: 2024-02-11
+tags: [11ty, github, ci]
 ---
 [11ty](https://www.11ty.dev/) is an awesome (and super fast) static site generator and [GitHub Pages](https://pages.github.com/) is a nice and free way to host a static website. The [11ty Deployment Documentation](https://www.11ty.dev/docs/deployment/) even mentions GitHub Pages, but doesn't mention the small config changes you have to do to make your 11ty page work there. This post goes over three possible 11ty setups and how to make them work with GitHub Pages.
 

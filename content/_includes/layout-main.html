@@ -1,28 +1,15 @@
-<!DOCTYPE html>
-<html>
-<script src="/src/toggle-theme.js"></script>
-
-<head>
-    {% render 'styles' %}
-    <title>Dawid's blog</title>
-</head>
-
-<body>
-    <div class="container">
-        <header>
-            <nav id="main-page-nav">
-                <ul>
-                    <h1>Dawid's blog</h1>
-                </ul>
-                <ul>
-                    <li><button onclick="toggleTheme()" class="outline contrast">💡</button></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            {{ content }}
-        </main>
-    </div>
-</body>
-
-</html>
+{% render 'common/top' %}
+            <header>
+                <nav id="main-page-nav">
+                    <ul>
+                        <h1>Dawid's blog</h1>
+                    </ul>
+                    <ul>
+                        <li><button onclick="toggleTheme()" class="outline contrast">💡</button></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                {{ content }}
+            </main>
+{% render 'common/bottom' %}

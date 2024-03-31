@@ -1,39 +1,27 @@
-<!DOCTYPE html>
-<html>
-<script src="/src/toggle-theme.js"></script>
-
-<head>
-    {% render 'styles' %}
-    <title>{{ title }}</title>
-</head>
-
-<body>
-    <div class="container">
-        <header>
-            <nav>
-                <ul>
-                    <nav aria-label="breadcrumb">
-                        <ul>
-                            <li><strong><a href="/">Dawid's blog</a></strong></li>
-                            <li><h1>{{ title }}</h1></li>
-                        </ul>
-                    </nav>
-                </ul>
-                <ul>
-                    <li><button onclick="toggleTheme()" class="outline contrast">💡</button></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <p id="dates"><em>
-                Published on: {{ published | date: "%Y-%m-%d" }}
-                {% if modified %}
-                | Last modified on: {{ modified | date: "%Y-%m-%d" }}
-                {% endif %}
-            </p></em>
-            {{ content }}
-        </main>
-    </div>
-</body>
-
-</html>
+{% render 'common/top' %}
+            <header>
+                <nav>
+                    <ul>
+                        <nav aria-label="breadcrumb">
+                            <ul>
+                                <li><strong><a href="/">Dawid's blog</a></strong></li>
+                                <li><h1>{{ title }}</h1></li>
+                            </ul>
+                        </nav>
+                    </ul>
+                    <ul>
+                        <li><button onclick="toggleTheme()" class="outline contrast">💡</button></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div id="post-header">
+                    <p>
+                        {% render 'common/render-date', published: published, modified: modified %}
+                        <br />
+                        {% render 'common/render-tags', tags: tags %}
+                    </p>
+                </div>
+                {{ content }}
+            </main>
+{% render 'common/bottom' %}

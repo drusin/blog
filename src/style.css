@@ -1,14 +1,30 @@
+#page-container {
+    position: relative;
+    min-height: 99vh;
+}
+
+#content-wrap {
+    padding-bottom: 7rem;    /* Footer height */
+}
+
 #main-page-nav {
     margin-top: 0.45rem;
 }
 
-#dates {
-    margin-bottom: 1.5rem;
+#post-header, .summary-footer {
     font-size: medium;
+    margin-bottom: 1.5rem;
 }
 
 nav ul li:first-of-type {
     padding-left: 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7rem;
 }
 
 /* overwrite pico */
