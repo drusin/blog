@@ -20,6 +20,10 @@
     margin-bottom: 1.5rem;
 }
 
+#sign-off {
+    margin: 1.5rem
+}
+
 nav ul li:first-of-type {
     padding-left: 0;
 }
