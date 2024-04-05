@@ -1,0 +1,23 @@
+{% render 'common/top', title: 'Dawid's blog' %}
+            <header>
+                <nav id="main-page-nav">
+                    <ul>
+                        <h1>Dawid's blog</h1>
+                    </ul>
+                    <ul>
+                        <li><button onclick="toggleTheme()" class="outline contrast">💡</button></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                {% assign sorted_posts = collections.post | reverse: "modified" %}
+                {% for post in sorted_posts %}
+                <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+                {{ post.content | split: '</p>' | first }}
+                <div class="summary-footer">
+                    {% render 'common/render-date', published: post.data.published, modified: post.data.modified %}
+                    {% render 'common/render-tags', tags: post.data.tags %}
+                </div>
+                {% endfor %}
+            </main>
+{% render 'common/bottom' %}
