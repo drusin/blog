@@ -32,7 +32,7 @@
                     <p>
                         <em>
 Published: 2024-02-09
- - Last modified: 2024-02-11 
+ - Last modified: 2024-04-05 
 </em>
                         <br>
                         <em>
@@ -40,25 +40,39 @@ Published: 2024-02-09
  #11ty #ci #github #post
 </em>
                     </p>
+                    
+                    Edits:
+                    
+                    <p class="edit">
+                        <em>2024-02-11: Documented using GitHub Actions</em>
+                    </p>
+                    
+                    <p class="edit">
+                        <em>2024-04-05: Clarifications, finishing touches</em>
+                    </p>
+                    
+                    
                 </div>
-                <p><a href="https://www.11ty.dev/">11ty</a> is an awesome (and super fast) static site generator and <a href="https://pages.github.com/">GitHub Pages</a> is a nice and free way to host a static website. The <a href="https://www.11ty.dev/docs/deployment/">11ty Deployment Documentation</a> even mentions GitHub Pages, but doesn't mention the small config changes you have to do to make your 11ty page work there. This post goes over three possible 11ty setups and how to make them work with GitHub Pages.</p>
+                <p><a href="https://www.11ty.dev/">11ty</a> is an awesome (and super fast) static site generator and <a href="https://pages.github.com/">GitHub Pages</a> is a nice and free way to host a static website. The <a href="https://www.11ty.dev/docs/deployment/">11ty Deployment Documentation</a> even mentions GitHub Pages, but doesn't document the small config changes you have to do to make your 11ty page work there. This post goes over two 11ty setups for GitHub Pages: one simple but a bit clunky, and one slightly more involved but also more comfortable in the end.</p>
 <h2>GitHub Pages?</h2>
-<p>You can enable the Pages functionality for public repos in the repository settings. You can choose which branch should be deployed and if your static page is directly on the root or in the <code>docs</code> folder. The overall process is very straightforward and well documented <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">here</a>. If you need some more complicated build steps, you can also deploy your page via custom actions.</p>
+<p>You can enable the Pages functionality for public repos in the repository settings. You can choose which branch should be deployed and if your static page is directly on the root or in the <code>docs</code> folder. The overall process is quite straightforward and well documented <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">here</a>. If you need some more complicated build steps, you can also deploy your page via custom actions (spoiler: this will be used in the second method).</p>
 <h2>What is the problem?</h2>
-<p>11ty creates static links to internal pages and the browser expects them to be top-level, which they are not on GitHub Pages. So we need to make 11ty generate links with the right prefix.</p>
+<p>In short: 11ty creates static links to internal pages and the browser expects them to be top-level, which they are not on GitHub Pages. So we need to make 11ty generate links with the right prefix.</p>
 <p>Some more descritpive explanation:<br>
-In theory, you can push the content of your 11ty <code>_site</code> folder to a pages-enabled respository (or configure 11ty to use the <code>docs</code> folder) and it after a small build process it will be serverd on <code>https://[your GitHub username].github.io/[repository name]/</code>. And if you try it out, the main page will work, but all the internal links will be broken and result in a <code>404</code> on GitHub Pages' side.</p>
+In theory, you can push the content of your 11ty <code>_site</code> folder to a pages-enabled respository (or configure 11ty to use the <code>docs</code> folder) and it after a small build process it will be serverd on <code>https://[your GitHub username].github.io/[repository name]/</code>. And if you try it out, the main page might work, but all the internal links will be broken and result in a <code>404</code> on GitHub Pages' side.</p>
 <p>At the time of writing, googling for <code>11ty github pages</code> wasn't very helpful, I had to search through the <a href="https://www.11ty.dev/blog/discord/">11ty discord</a> to understand what the actual problem was. Afterwards it still took me some trying out and some reading through the documentation to fix the problem for this blog.</p>
 <h2>Fixing the problem</h2>
-<p>Below you will find a few step-by-step instructions on how to deal with this isssue, depending on how you want your project to be set up:</p>
+<p>Below you will find a few step-by-step instructions together with explanaitions on how to deal with this isssue, depending on how you want your project to be set up:</p>
 <h3>Prerequisites:</h3>
-<p>You have an 11ty project (e.g. the <a href="https://github.com/11ty/eleventy-base-blog">11ty base blog template</a>) hosted in a public repository on GitHub and cloned it locally to your PC. The project works locally when running <code>npx @11ty/eleventy --serve</code>.</p>
-<h3>Main part of the fix, needed for all approaches</h3>
+<p>You have an 11ty project (e.g. the <a href="https://github.com/11ty/eleventy-base-blog">11ty base blog template</a>) hosted in a public repository on GitHub and cloned it locally to your PC. The project works locally when running <code>npx @11ty/eleventy --serve</code>. You can push code changes to the GitHub repository.</p>
+<h3>11ty configuration: Main part of the fix, needed for both approaches</h3>
 <p>We need to tell 11ty that the webpage will be served from a subfolder.</p>
 <ol>
-<li>If not present yet, create an 11ty settings file named <code>.eleventy.js</code> (the <code>.</code> at the beginning is important) in the root of your project with the following content:<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token punctuation">{</span> EleventyHtmlBasePlugin <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"@11ty/eleventy"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<li>
+<p>If not present yet, create an 11ty settings file named <code>.eleventy.js</code> (the <code>.</code> at the beginning is important) in the root of your project. 11ty comes with a lot of sensible defaults which make it possible to start creating a static website with almost zero configuration. This fil is one way to add some plugins to 11ty and to change the configuration. Put the following content into it:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token punctuation">{</span> EleventyHtmlBasePlugin <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"@11ty/eleventy"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">eleventyConfig</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">eleventyConfig</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token comment">// necessary to automatically prepend the prefix to internal links</span>
   eleventyConfig<span class="token punctuation">.</span><span class="token function">addPlugin</span><span class="token punctuation">(</span>EleventyHtmlBasePlugin<span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token keyword">return</span> <span class="token punctuation">{</span>
@@ -67,8 +81,11 @@ module<span class="token punctuation">.</span><span class="token function-variab
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
 </li>
-<li>Make sure that the value of <code>pathPrefix</code> above matches the name of your GitHub repository</li>
-<li>Verify that everything works locally:
+<li>
+<p>Make sure that the value of <code>pathPrefix</code> above matches the name of your GitHub repository</p>
+</li>
+<li>
+<p>Verify that everything works locally:</p>
 <ol>
 <li>Run <code>npx @11ty/eleventy --serve</code> in your project's root folder</li>
 <li>Observe that the webpage is now served on <code>localhost:8080/blog</code> (replace <code>blog</code> with the <code>pathPrefix</code> you set)</li>
@@ -76,20 +93,26 @@ module<span class="token punctuation">.</span><span class="token function-variab
 </ol>
 </li>
 </ol>
-<h3>Easiest: using the <code>docs</code> folder on your main branch</h3>
+<h3>Hosting your 11ty webpage on GitHub</h3>
+<p>And now let's put it online!</p>
+<h4>Easiest: using the <code>docs</code> folder on your main branch</h4>
 <p>One of the easiest ways to host a static website is to put it in a folder named <code>docs</code> and let GitHub find it.</p>
 <ol>
-<li>Setup GitHub Pages for the repository:
+<li>
+<p>Setup GitHub Pages for the repository:</p>
 <ol>
+<li>Open the GitHub webpage page of your repository</li>
 <li>(Repository) Settings -&gt; Code and automation / Pages</li>
 <li>Source: <code>Deploy from a branch</code></li>
 <li>Branch: <code>main</code> (or whichever you want to your webpage to be hosted from)</li>
 <li>Folder: <code>docs</code></li>
 </ol>
 </li>
-<li>Change the 11ty config in your local clone of the project:
+<li>
+<p>Change the default 11ty config in your local clone of the project:</p>
 <ol>
-<li>Add <code>dir: { output: &quot;docs&quot; }</code> to the exported function's return value. This is how it could look afterwards:</li>
+<li>Open the <code>.eleventy.js</code> file on your pc (if you don't have one, you probably missed <a href="#11ty-configuration-main-part-of-the-fix-needed-for-both-approaches">the main part of the fix</a>)</li>
+<li>Add <code>dir: { output: &quot;docs&quot; }</code> like below to change the output folder from the default <code>_site</code> to the GitHub Pages preferred <code>docs</code>:</li>
 </ol>
 <pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token punctuation">{</span> EleventyHtmlBasePlugin <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"@11ty/eleventy"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
@@ -105,49 +128,67 @@ module<span class="token punctuation">.</span><span class="token function-variab
     <span class="token literal-property property">pathPrefix</span><span class="token operator">:</span> <span class="token string">"/blog/"</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
-<ol start="2">
-<li>If you run <code>npx @11ty/eleventy</code> the generated html should now end up in the <code>docs</code> folder instead of the <code>_site</code> folder</li>
+<ol start="3">
+<li>If you run <code>npx @11ty/eleventy</code>, the generated html should now end up in the <code>docs</code> folder instead of the <code>_site</code> folder</li>
 </ol>
 </li>
-<li>In the <code>docs</code> folder, add an empty file named <code>.nojekyll</code> (again the <code>.</code> at the beginning is important) to tell GitHub that it shouldn't treat your webpage as a Jekyll project</li>
-<li>(Optional) Delete the now obsolete <code>_pages</code> folder.</li>
-<li>Commit your changes and push to GitHub.</li>
+<li>
+<p>In the <code>docs</code> folder, add an empty file named <code>.nojekyll</code> (again the <code>.</code> at the beginning is important) to tell GitHub that it shouldn't treat your webpage as a Jekyll project</p>
+</li>
+<li>
+<p>(Optional) Delete the now obsolete <code>_pages</code> folder.</p>
+</li>
+<li>
+<p>Commit your changes and push to GitHub.</p>
+</li>
 </ol>
 <p>A few minutes after pushing, you should see a new deployment for your project on the GitHub webpage.</p>
-<h3>A bit more involved, but also more elegant: use a GitHub Workflow to deploy Pages</h3>
-<p>The problem with the solution above is that you have to do the building yourself pushing of the built page yourself. With 11ty it takes seconds, so it's not too bad, but a nicer approach would be to put the build folder on <code>.gitignore</code> and let GitHub build the project automatically everytime something to the main branch is pushed.</p>
+<h4>A bit more involved, but also more comfortable once set up: use a GitHub Workflow to deploy Pages</h4>
+<p>The annoyance with the solution above is that you have to do the building of the built page yourself. With 11ty it takes milliseconds, so it's not too bad, but you still have to remember to do it and commit more files to git than necessary. It is also not a good practice to have built files that you don't need to version (because they are recreated every time you change something anyway) in version control. A nicer approach would be to let GitHub build the project automatically for you every time changes to the main branch are pushed.</p>
 <ol>
-<li>Create a new remote branch named <code>gh-actions</code> in your repository
+<li>
+<p>Create a new remote branch named <code>gh-actions</code> in your repository:</p>
 <ol>
+<li>Open the GitHub webpage page of your repository</li>
 <li>Click on <code>1 branch</code> on the GitHub web interface</li>
 <li>Click on <code>New branch</code></li>
 <li>Name it <code>gh-actions</code> and click <code>Create new branch</code> (the <code>Source</code> doesn't matter)</li>
 </ol>
 </li>
-<li>(Optional:) remove <code>dir: { output: &quot;docs&quot; },</code> from <code>.eleventy.config</code> if present - just a matter of taste, shorter config file vs. explicit configuration (because now the output folder will implicitly be the 11ty default <code>_site</code>)</li>
-<li>Create a folder named <code>.github</code> (mind the <code>.</code>) in the root of the project, and a folder named <code>workflows</code> within</li>
-<li>In the <code>workflows</code> folder:
+<li>
+<p>(Optional:) remove <code>dir: { output: &quot;docs&quot; },</code> from <code>.eleventy.config</code> if present - just a matter of taste, shorter config file vs. explicit configuration (because now the output folder will implicitly be the 11ty default <code>_site</code>)</p>
+</li>
+<li>
+<p>Create a folder named <code>.github</code> (mind the <code>.</code>) in the root of the project, and a folder named <code>workflows</code> within. This is where GitHub is looking for workflow definitions</p>
+</li>
+<li>
+<p>In the <code>workflows</code> folder:</p>
 <ol>
-<li>Create a file named <code>deploy-pages.yml</code> with the following content:</li>
+<li>Create a file named <code>deploy-pages.yml</code>. This file will tell GitHub to build your site and host it on GitHub Pages after you push something to master. Use the following content:</li>
 </ol>
-<pre class="language-yml"><code class="language-yml"><span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy GH Pages
+<pre class="language-yml"><code class="language-yml"><span class="token comment"># Name of the action:</span>
+<span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy GH Pages
 
+<span class="token comment"># when should it trigger? </span>
 <span class="token key atrule">on</span><span class="token punctuation">:</span>
+  <span class="token comment"># trigger when something is pushed to the branch main</span>
   <span class="token key atrule">push</span><span class="token punctuation">:</span> 
-    <span class="token comment"># trigger when something is pushed to the branch main</span>
     <span class="token key atrule">branches</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string">"main"</span> <span class="token punctuation">]</span>
-  <span class="token comment"># make it possible to trigger manually</span>
+  <span class="token comment"># make it possible to trigger manually, useful for debugging</span>
   <span class="token key atrule">workflow_dispatch</span><span class="token punctuation">:</span> 
 
+<span class="token comment"># what should be done</span>
 <span class="token key atrule">jobs</span><span class="token punctuation">:</span>
+  <span class="token comment"># we have only one stage and we name it 'build'</span>
   <span class="token key atrule">build</span><span class="token punctuation">:</span>
+    <span class="token comment"># this is the (docker) image used to run the steps below</span>
     <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
 
     <span class="token key atrule">steps</span><span class="token punctuation">:</span>
       <span class="token comment"># checkout the branch</span>
       <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v3
 
-      <span class="token comment"># run npm ci and npm run build</span>
+      <span class="token comment"># run npm ci and npm run build to install the dependencies and to build the page</span>
       <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> npm ci &amp; build
         <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v4
       <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm ci
@@ -157,15 +198,20 @@ module<span class="token punctuation">.</span><span class="token function-variab
       <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> deploy
         <span class="token key atrule">uses</span><span class="token punctuation">:</span> peaceiris/actions<span class="token punctuation">-</span>gh<span class="token punctuation">-</span>pages@v3
         <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token comment"># this line is needed for the action to be able to push something to your repository</span>
           <span class="token key atrule">github_token</span><span class="token punctuation">:</span> $
           <span class="token key atrule">publish_dir</span><span class="token punctuation">:</span> ./_site</code></pre>
 <ol start="2">
 <li>If you you have a custom folder, change the value of <code>publish_dir</code> above accordingly</li>
 </ol>
 </li>
-<li>Push the changes to GitHub</li>
-<li>Setup GitHub Pages for the repository:
+<li>
+<p>Push the changes to GitHub</p>
+</li>
+<li>
+<p>Setup GitHub Pages for the repository:</p>
 <ol>
+<li>Open the GitHub webpage page of your repository</li>
 <li>(Repository) Settings -&gt; Code and automation / Pages</li>
 <li>Source: <code>Deploy from a branch</code></li>
 <li>Branch: <code>gh-pages</code></li>
@@ -174,6 +220,9 @@ module<span class="token punctuation">.</span><span class="token function-variab
 </li>
 </ol>
 <p>Now, after each push to the <code>main</code> branch, at first the <code>Deploy GH Pages</code> workflow will build your page and push it to <code>gh-pages</code> and afterwards the GitHub built-in workflow <code>pages-build-deployment</code> will publish the content on GitHub Pages.</p>
+<h2>Closing remarks</h2>
+<p>Now you should have your 11ty page hosted and working on GitHub Pages!<br>
+If you like my writing style and are interested on tutorials for things that were required in the above article, like using git or creating a basic page with 11ty, please tell me and I'll have a look at writing something up!</p>
 
             </main>
         </div>
