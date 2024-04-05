@@ -1,0 +1,6 @@
+{
+    "markdown.styles": [
+        "node_modules/@picocss/pico/css/pico.min.css",
+        "node_modules/prismjs/themes/prism-okaidia.min.css"
+    ]
+}
