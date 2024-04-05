@@ -1,7 +1,7 @@
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   // necessary to automatically prepend the prefix to internal links
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   eleventyConfig.addPlugin(syntaxHighlight);

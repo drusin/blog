@@ -21,6 +21,14 @@
                         <br />
                         {% render 'common/render-tags', tags: tags %}
                     </p>
+                    {% if edits %}
+                    Edits:
+                    {% for edit in edits %}
+                    <p class="edit">
+                        <em>{{ edit }}</em>
+                    </p>
+                    {% endfor %}
+                    {% endif %}
                 </div>
                 {{ content }}
             </main>
