@@ -1,8 +1,8 @@
 ---
-title: How to setup your 11ty project for GitHub Pages
+title: "Tutorial: How to setup your 11ty project for GitHub Pages"
 published: 2024-02-09
 modified: 2024-04-05
-tags: [11ty, github, ci]
+tags: [11ty, github, ci, tutorial]
 edits:
   - "2024-02-11: Using GitHub Actions documented"
   - "2024-04-05: Clarifications, finishing touches"
