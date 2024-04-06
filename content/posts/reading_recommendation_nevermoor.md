@@ -47,13 +47,15 @@ I'm waiting for the fourth installment since 2022... It was postponed twice alre
 Also I would say that the books get darker in general. While the first one has a lot of "feel good" passages, the third one e.g. has the pressure and huge stakes present through most of the story - not per say bad, just something to be aware of.
 
 ## How is the Audiobook?
-It's good :)
+It's good :)  
+I listened to the English version read by Gemma Whelan. It is not a full dramatization, so no sound effects, no additional actors. The performance is really solid, nothing to critique here.  
+I also heard a few bits of the German audiobook, read by Hans Löw. It is quite solid, but I think a female voice suits a story that closely follows the antics of an 11 years old girl way better..
 
 ## So why should I read this instead of Harry Potter?
-1. It's a new, different, awesome story. No one is taking Harry Potter from you, but if you enjoyed it, you will enjoy Nevermoor
+1. It's a new, different, awesome story. No one is taking Harry Potter away from you, and chances are you that you will really enjoy the trip to Nevermoor
 2. It is not written by a huge transphobe
-3. The child main character is not forced to their abusive family at the end of every book and has to deal with them at the beginning of the next one
-4. The main antagonist is more interesting and more nuanced than "I want to rule the world and get rid of the impure"
+3. The child main character is not forced to their abusive family at the end of every book and has to deal with them at the beginning of the next one, which is a huge plus in my book
+4. The main antagonist is more interesting and more nuanced than "I want to rule the world"
 
 ## Closing remarks
 If you like fantasy, and want to explore a new magical world through the eyes of an 11 years old cursed child - It's an awesome book series and I warmly recommend it.
