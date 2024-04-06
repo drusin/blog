@@ -1,11 +1,7 @@
-const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const customFilters = require("./custom-filters");
 
 module.exports = function (eleventyConfig) {
-  // used for prefixing links
-  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
-
   eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.addPassthroughCopy("src");
@@ -17,7 +13,6 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: "content"
-    },
-    pathPrefix: "/blog/"
+    }
   }
 };
