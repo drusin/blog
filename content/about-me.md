@@ -20,7 +20,7 @@ In the last few months I got the feeling a bunch of times that I just want to sh
 Somehow, having a separate blog for me that people can check out when they are interested, feels better than using social media for that. Just my own gut feeling though, no hard data behind it ;)
 
 ## What am I writing about
-This is not (only) a tech blog, it's my blog - I will write about topics that are currently on my mind ;)
+This is not (only) a tech blog, it's my blog - I will write about whatever is currently on my mind ;)
 
 Possible topics:
 * Tech in general - tutorials, experiences, opinions

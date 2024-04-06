@@ -29,13 +29,13 @@ But to be honest, these are some problematic aspects in a large book series that
 What made me fall out of love with the Harry Potter series, is that...
 1. J. K. Rowling is a huge transphobe
 2. She uses her huge amount of money and reach to spread her transphobia
-3. She has literally tweeted that for her people buying Harry Potter/Wizarding World products means they are supporting her own views
+3. Every time someone buys something Harry Potter/Wizarding World related, money goes her way
 4. (point 3. is why "death of the author" doesn't work for me here)
 
 _Backstory over ;)_
 </details>
 
-## What I enjoyed in the book series
+## What I enjoyed in the Newvemoor book series
 First and foremost - the atmosphere. It was really for the first time since reading the first Harry Potter book as a child that I felt sucked into this magical and wondrous world. I wanted to know every detail about the society, customs, creatures, etc.  
 I found Morrigan to be a very likable character, her actions, reactions, thoughts and feelings were very understandable for me.  
 There are a lot of interesting characters - many are likable, many are mysterious, some are unlikable - but none of them are boring.  
@@ -46,16 +46,16 @@ There were a few parts, especially in the first book, that felt directly pulled 
 I'm waiting for the fourth installment since 2022... It was postponed twice already, let's see how it looks in September 2024... Mrs. Townsend, please hurry up and give me my closure!  
 Also I would say that the books get darker in general. While the first one has a lot of "feel good" passages, the third one e.g. has the pressure and huge stakes present through most of the story - not per say bad, just something to be aware of.
 
-## How is the Audiobook?
+## How is the audio book?
 It's good :)  
 I listened to the English version read by Gemma Whelan. It is not a full dramatization, so no sound effects, no additional actors. The performance is really solid, nothing to critique here.  
 I also heard a few bits of the German audiobook, read by Hans Löw. It is quite solid, but I think a female voice suits a story that closely follows the antics of an 11 years old girl way better..
 
 ## So why should I read this instead of Harry Potter?
-1. It's a new, different, awesome story. No one is taking Harry Potter away from you, and chances are you that you will really enjoy the trip to Nevermoor
+1. It's a new, different, and awesome story. No one is taking Harry Potter away from you, and I think that most Potterheads will really enjoy the trip to Nevermoor
 2. It is not written by a huge transphobe
 3. The child main character is not forced to their abusive family at the end of every book and has to deal with them at the beginning of the next one, which is a huge plus in my book
 4. The main antagonist is more interesting and more nuanced than "I want to rule the world"
 
 ## Closing remarks
-If you like fantasy, and want to explore a new magical world through the eyes of an 11 years old cursed child - It's an awesome book series and I warmly recommend it.
+If you like fantasy, and want to explore a new magical world through the eyes of an 11 years old cursed child - It's an awesome book series and I warmly recommend it. The first book in the series is titled __"Nevermoor: The Trials of Morrigan Crow"__ and you can find it in most places that sell books or audio books.
