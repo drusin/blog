@@ -44,6 +44,12 @@ footer {
     height: 7rem;
 }
 
+@media only screen and (max-width: 600px) {
+    footer {
+        width: 90%;
+    }
+}
+
 /* overwrite pico */
 nav ul:first-of-type {
     margin-left: 0;
