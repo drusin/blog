@@ -2,6 +2,15 @@
     margin: 0;
 }
 
+.black-logo {
+    background-color: white;
+    height: 2rem;
+    width: 2rem;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    border-radius: 45%;
+}
+
 #page-container {
     position: relative;
     min-height: 99vh;
