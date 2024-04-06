@@ -12,48 +12,48 @@
 <body>
     <div id="page-container" class="container">
         <div id="content-wrap">
-            <header>
-                <nav>
-                    <ul>
-                        <nav aria-label="breadcrumb">
-                            <ul>
-                                <li><strong><a href="/blog/">Dawid's blog</a></strong></li>
-                                <li><h1>How to setup your 11ty project for GitHub Pages</h1></li>
-                            </ul>
-                        </nav>
-                    </ul>
-                    <ul>
-                        <li><button onclick="toggleTheme()" class="outline contrast">💡</button></li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-                <div id="post-header">
-                    <p>
-                        <em>
+<header>
+    <nav>
+        <ul>
+            <nav aria-label="breadcrumb">
+                <ul>
+                    <li><strong><a href="/blog/">Dawid's blog</a></strong></li>
+                    <li><h1>How to setup your 11ty project for GitHub Pages</h1></li>
+                </ul>
+            </nav>
+        </ul>
+        <ul>
+            <li><button onclick="toggleTheme()" class="outline contrast">💡</button></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div id="post-header">
+        <p>
+            <em>
 Published: 2024-02-09
  - Last modified: 2024-04-05 
 </em>
-                        <br>
-                        <em>
+            <br>
+            <em>
 
  #11ty #ci #github #post
 </em>
-                    </p>
-                    
-                    Edits:
-                    
-                    <p class="edit">
-                        <em>2024-02-11: Using GitHub Actions documented</em>
-                    </p>
-                    
-                    <p class="edit">
-                        <em>2024-04-05: Clarifications, finishing touches</em>
-                    </p>
-                    
-                    
-                </div>
-                <p><a href="https://www.11ty.dev/">11ty</a> is an awesome (and super fast) static site generator and <a href="https://pages.github.com/">GitHub Pages</a> is a nice and free way to host a static website. The <a href="https://www.11ty.dev/docs/deployment/">11ty Deployment Documentation</a> even mentions GitHub Pages, but doesn't document the small config changes you have to do to make your 11ty page work there. This post goes over two 11ty setups for GitHub Pages: one simple but a bit clunky, and one slightly more involved but also more comfortable in the end.</p>
+        </p>
+        
+        Edits:
+        
+        <p class="edit">
+            <em>2024-02-11: Using GitHub Actions documented</em>
+        </p>
+        
+        <p class="edit">
+            <em>2024-04-05: Clarifications, finishing touches</em>
+        </p>
+        
+        
+    </div>
+    <p><a href="https://www.11ty.dev/">11ty</a> is an awesome (and super fast) static site generator and <a href="https://pages.github.com/">GitHub Pages</a> is a nice and free way to host a static website. The <a href="https://www.11ty.dev/docs/deployment/">11ty Deployment Documentation</a> even mentions GitHub Pages, but doesn't document the small config changes you have to do to make your 11ty page work there. This post goes over two 11ty setups for GitHub Pages: one simple but a bit clunky, and one slightly more involved but also more comfortable in the end.</p>
 <h2>GitHub Pages?</h2>
 <p>You can enable the Pages functionality for public repos in the repository settings. You can choose which branch should be deployed and if your static page is directly on the root or in the <code>docs</code> folder. The overall process is quite straightforward and well documented <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">here</a>. If you need some more complicated build steps, you can also deploy your page via custom actions (spoiler: this will be used in the second method).</p>
 <h2>What is the problem?</h2>
@@ -224,27 +224,26 @@ module<span class="token punctuation">.</span><span class="token function-variab
 <p>Now you should have your 11ty page hosted and working on GitHub Pages!<br>
 If you like my writing style and are interested on tutorials for things that were required in the above article, like using git or creating a basic page with 11ty, please tell me and I'll have a look at writing something up!</p>
 
-                <div id="sign-off">
+    <div id="sign-off">
     <cite>- Dawid</cite>
-    <p><em>Find me on <a href="https://mastodon.gamedev.place/@loganthemanster"><img class="black-logo" src="/blog/src/assets/mastodon.svg">Mastodon</a>
-    and on <a href="https://github.com/drusin"><img class="black-logo" src="/blog/src/assets/github-mark.svg">GitHub</a>!</em></p>
+    <p><em>You can find me on <a href="https://mastodon.gamedev.place/@loganthemanster"><img class="black-logo" src="/blog/src/assets/mastodon.svg">Mastodon</a>
+    and on <a href="https://github.com/drusin/blog"><img class="black-logo" src="/blog/src/assets/github-mark.svg">GitHub</a>!</em></p>
 </div>
 
-            </main>
+</main>
         </div>
         <footer>
             <hr>
             <nav>
                 <ul>
                     <li>
-                        About me
+                        <a href="/blog/about-me/">About me</a>
                     </li>
                 </ul>
                 <ul>
-                    <li>Made with ♡</li>
-                    <li>Powered by</li>
-                    <li><a href="https://www.11ty.dev/">11ty</a></li>
-                    <li><a href="https://picocss.com/">Pico CSS</a></li>
+                    <em>
+                        <li>Made with <a href="https://www.11ty.dev/">11ty</a> and <a href="https://picocss.com/">Pico CSS</a></li>
+                    </em>
                 </ul>
                 <ul>
                     <li>
