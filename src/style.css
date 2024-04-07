@@ -37,7 +37,7 @@ nav ul li:first-of-type {
     padding-left: 0;
 }
 
-footer {
+#page-footer {
     position: absolute;
     bottom: 0;
     width: 100%;
