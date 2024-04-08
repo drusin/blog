@@ -1,7 +1,7 @@
 ---
 title: 'Reading recommendation: The "Nevermoor" series by Jessica Townsend'
 published: 2024-04-06
-tags: [recommendation, book, audiobook, fantasy]
+tags: [reading, recommendation, book, audiobook, fantasy]
 ---
 Morrigan Crow is a cursed, almost 11 years old, child. As all cursed children in the Wintersea Republic, she is responsible for all accidents, mishaps und bad luck in her vicinity. Also, as all cursed children, she is supposed to die on her upcoming birthday.
 
