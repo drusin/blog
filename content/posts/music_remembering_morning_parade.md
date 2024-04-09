@@ -81,4 +81,4 @@ The only official reason was given on [their Facebook](https://www.facebook.com/
 The former bass guitar player, Phil Titus, [died on March 9th, 2023](https://www.facebook.com/morningparade/posts/pfbid0TkLbaXkX4FSMMJF3XALw8kBdXnAM8m3wY9ur4qQ759WH1oWYJPyeEDgwsNx7CEZpl). Steve Sparrow, the former singer, was working on a project named [The Sunshine The Sorrow](https://www.instagram.com/thesunshinethesorrow/), and apparently released a few tracks (which are not on streaming platforms). I did not get to check out any of his new material yet.
 
 ## Closing remarks
-It was an awesome band, definitely worth a listen. From time to time I get sucked back into their songs then and that's all that's playing for a few days.
+It was an awesome band, definitely worth a listen. From time to time I get sucked back into their songs and then that's all that's playing for a few days.
