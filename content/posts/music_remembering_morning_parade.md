@@ -26,7 +26,7 @@ To be honest, I just took the "alternative rock" label from their Wikipedia arti
 
 You have the standard-is setup of drums, (distorted) bass guitar and two electric guitars, joined by omnipresent synths - sometimes subtle, often massive and in your face. Add superb vocals and a lot of, often multi-part, vocal harmonies. Sometimes one of the electric guitars is swapped for an acoustic, sometimes there might be piano instead of synths.
 
-The songs are usually upbeat, have great melodies and a massive, sing-along hymnic choruses. What I find quite interesting, from a compositional point of view, are the instances where one guitar and sometimes even the whole chord structure follows the main vocal melody (or is it the other way round? I don't know...), like for example in the first verses of "Headlights" and "Us & Ourselves".
+The songs are usually upbeat, have great melodies and massive, sing-along hymnic choruses. What I find quite interesting, from a compositional point of view, are the instances where one guitar and sometimes even the whole chord structure follows the main vocal melody (or is it the other way round? I don't know...), like for example in the first verses of "Headlights" and "Us & Ourselves".
 
 <blockquote>
 Tell them to keep the cameras rolling
