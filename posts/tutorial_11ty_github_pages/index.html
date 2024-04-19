@@ -190,7 +190,7 @@ module<span class="token punctuation">.</span><span class="token function-variab
       <span class="token comment"># checkout the branch</span>
       <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v3
 
-      <span class="token comment"># run npm ci and npm run build to install the dependencies and to build the page</span>
+      <span class="token comment"># install the project and to build the page</span>
       <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> npm ci &amp; build
         <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v4
       <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm ci
