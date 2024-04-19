@@ -123,7 +123,7 @@ The annoyance with the solution above is that you have to do the building of the
           # checkout the branch
           - uses: actions/checkout@v3
 
-          # run npm ci and npm run build to install the dependencies and to build the page
+          # install the project and to build the page
           - name: npm ci & build
             uses: actions/setup-node@v4
           - run: npm ci
