@@ -1,7 +1,11 @@
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const customLiquid = require("./custom-liquid");
 
 module.exports = function (eleventyConfig) {
+  // needed for pathprefix to work in npm run code-server
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+  
   eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.addPassthroughCopy("src");

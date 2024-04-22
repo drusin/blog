@@ -3,10 +3,12 @@
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@picocss/pico": "^2.0.6",
+    "http-server": "^14.1.1",
     "prismjs": "^1.29.0"
   },
   "scripts": {
     "build": "npx @11ty/eleventy",
-    "start": "npx @11ty/eleventy --serve"
+    "start": "npx @11ty/eleventy --serve",
+    "code-server": "npx @11ty/eleventy --watch --pathprefix=proxy/8765/ & npx http-server _site/ -p 8765"
   }
 }
