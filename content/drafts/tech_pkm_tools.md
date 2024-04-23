@@ -5,6 +5,17 @@ tags: [tech, pkm, obsidian, logseq, dendron, foam, markdown, foss]
 Personal Knowledge Management tools are there to help you collect, combine, query and visualize your notes. If done correctly, this leads to a personal knowledge database that you can use as a "second brain". Store notes and information in a way that makes it easy to find and create cross references between them. Usually those tools also have a visualization feature which results in a graph that looks a lot like neurons connected with synapses.  
 In this post I'll share my brief experiences with the three PKM tools I tried out: Dendron, Foam and Logseq.
 
+## My requirements
+Of course I have a few requirements for my PKM tool:
+* I want to be able to use it both in private and at work
+* I want to use on my PC, laptop and Android phone
+* The work should be synched between devices (but I don't mind if it requires a one time complicated setup)
+* The format should be at least somehow portable, in case I need to migrate to a different tool for whatever reason
+
+All the tools listed below use mostly Markdown under the hood, sometimes with excessive frontmatter, sometimes with some proprietary tags. But that's good enough to fulfill the "portability" requirement.
+
+Here come the tools!
+
 ## Obsidian: the elephant in the room
 Let's start with a tool I did not try out. [Obsidian](https://obsidian.md/) is the big player in the game - you will find hundreds of articles on the internet and thousands of hours of tutorials on YouTube about how to set it up, use it, what the best structure is, the best plugins, etc. It has the biggest community, the most stable apps, the biggest collection of plugins.
 
