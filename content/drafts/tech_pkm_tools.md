@@ -20,7 +20,7 @@ At the end there were two deal breakers for me:
 The quirks while using it, the bad mobile experience and the stopped development pushed me to look for an alternative.
 
 ## Foam: like Dendron but worse (but under active development!)
-The next thing I decided to try out, after skimming a bunch of blogs and reddit posts about FOOS PKM tools during last year's summer vacation, was [Foam](https://foambubble.github.io/foam/). My experience was "like Dendron, but mostly worse". Instead of one big extension, it is a collection of VS Code extensions. In direct comparison to Dendron, it has more (or other) quirks while using, the same pro (using VS Code on PC) and the same huge con (no mobile experience). After an hour or two, I continued with my search for a better tool.
+The next thing I decided to try out, after skimming a bunch of blogs and reddit posts about [foss](https://en.wikipedia.org/wiki/Free_and_open-source_software) PKM tools during last year's summer vacation, was [Foam](https://foambubble.github.io/foam/). My experience was "like Dendron, but mostly worse". Instead of one big extension, it is a collection of VS Code extensions. In direct comparison to Dendron, it has more (or other) quirks while using, the same pro (using VS Code on PC) and the same huge con (no mobile experience). After an hour or two, I continued with my search for a better tool.
 
 ## Logseq: the tool I'm currently using
-Finally I found, tried out and stuck with my current PKM tool - [Logseq](https://logseq.com/). 
+Finally I found, tried out the tool I stuck with until now - [Logseq](https://logseq.com/). It is open source, standalone and has apps for MacOS (and the app design mostly caters to this), Windows, Linux, iOS and Android.
