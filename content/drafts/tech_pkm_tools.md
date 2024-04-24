@@ -34,4 +34,9 @@ The quirks while using it, the bad mobile experience and the stopped development
 The next thing I decided to try out, after skimming a bunch of blogs and reddit posts about [foss](https://en.wikipedia.org/wiki/Free_and_open-source_software) PKM tools during last year's summer vacation, was [Foam](https://foambubble.github.io/foam/). My experience was "like Dendron, but mostly worse". Instead of one big extension, it is a collection of VS Code extensions. In direct comparison to Dendron, it has more (or other) quirks while using, the same pro (using VS Code on PC) and the same huge con (no mobile experience). After an hour or two, I continued with my search for a better tool.
 
 ## Logseq: the tool I'm currently using
-Finally I found, tried out the tool I stuck with until now - [Logseq](https://logseq.com/). It is open source, standalone and has apps for MacOS (and the app design mostly caters to this), Windows, Linux, iOS and Android.
+Finally I found, tried out the tool I stuck with until now - [Logseq](https://logseq.com/). It is open source, standalone and has apps for MacOS (and the app design mostly caters to this), Windows, Linux, iOS and Android. It has an active community, is being actively developed, has (optional and paid) cloud support for synching and has a plugin api and a plugin marketplace with currently over 300 plugins.
+
+### What does Logseq have in common with other popular PKM tools
+You can take quick notes, design full pages, link bi-directionally from page to page and tag your pages. The content you create is stored in the markdown format which is human readable and at least somehow portable.
+
+### What does Logseq do differently than other tools
