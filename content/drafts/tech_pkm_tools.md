@@ -37,6 +37,7 @@ The next thing I decided to try out, after skimming a bunch of blogs and reddit 
 Finally I found, tried out the tool I stuck with until now - [Logseq](https://logseq.com/). It is open source, standalone and has apps for MacOS (and the app design mostly caters to this), Windows, Linux, iOS and Android. It has an active community, is being actively developed, has (optional and paid) cloud support for synching and has a plugin api and a plugin marketplace with currently over 300 plugins.
 
 ### What does Logseq have in common with other popular PKM tools
-You can take quick notes, design full pages, link bi-directionally from page to page and tag your pages. The content you create is stored in the markdown format which is human readable and at least somehow portable.
+You can take quick notes, design full pages, link bi-directionally from page to page and tag your pages. The content you create is stored in the markdown format which is human readable and at least somehow portable. It can create and display a pretty graph of all your pages and documents and their connections and relations.
 
 ### What does Logseq do differently than other tools
+* Whiteboard and flashcard functionality built it, but I haven't really used it yet
