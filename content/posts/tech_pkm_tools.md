@@ -69,7 +69,7 @@ Attentive readers will have noticed that synching between devices is in my list 
 Well, maybe, but just maybe, I spend a day of my last year's summer vacation, after researching PKM tools, to write a custom plugin for Logseq that synchronizes the Logseq graph to a git repository every time you stopped typing...  
 I need to clean it up a bit and will try to publish it on the Logseq plugin marketplace, promised!
 
-## Should I try Logseq if I'm already using Obsidian?
+## Should you try Logseq if I'm already using Obsidian?
 Obsidian has a more active community, bigger plugin ecosystem and (I assume) runs faster and is more stable - chances are if you are happy with it right now, you won't find a good reason to switch.  
 But, of course, Logseq is free. So if you want to spend a weekend playing around with a different tool, nothing is stopping you. Especially if you find yourself thinking about layouting and structuring your thoughts/notes too much, it might be that Logseq's "just dump stuff in the journal every day"-approach could make it easier to get started with using a PKM tool more often. I quite like it! 
 
