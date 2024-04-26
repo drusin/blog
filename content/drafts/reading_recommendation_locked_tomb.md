@@ -12,4 +12,4 @@ The Locked Tomb is a series of dystopian adult science fantasy books by Tamsyn M
 Let's talk about the books one by one:
 
 ## Gideon the Ninth
-This is the start of the story. We get to know the protagonist, Gideon, as an edgy and foul mouthed teenager who despises everything about her current life and her surroundings.
+This is the start of the story. We get to know the protagonist, Gideon, as an edgy and foul mouthed teenager who despises everything about her current life and her surroundings. And it's understandable - there is literally one person on the entire planet who doesn't despise her, she doesn't belong there and is not at all interested in the necromantic cult going on over there.
