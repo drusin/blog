@@ -35,7 +35,7 @@ The book starts out in the middle of a situation, resolves it, drops you into a 
 * The main character could be described as very "edgy", which sets the tone for most of the book - I think it fits quite well, but might be a turn off for some
 
 #### You should read it
-If you don't mind the things mentioned in the content warning, and can deal with a lot of exposition and the edginess of a 17 years old who grew up on a barren planet, surrounded by old people, necromancers and skeletons, I __highly recommend this book__! And, besides all the good things I mentioned before that await you in it, after you finished reading, another awesome thing is waiting for you:
+If you don't mind the things mentioned in the content warning, and can deal with a lot of exposition and the edginess of an 18 years old who grew up on a barren planet, surrounded by old people, necromancers and skeletons, I __highly recommend this book__! And, besides all the good things I mentioned before that await you in it, after you finished reading, another awesome thing is waiting for you:
 
 ### Book 2: Harrow the Ninth
 The second book, as the title suggests, focuses on Harrowhark Nonagesimus, who we already got to know a lot in the first book. Well, getting to know her from Gideon's point of view was apparently not enough, because in this book...
