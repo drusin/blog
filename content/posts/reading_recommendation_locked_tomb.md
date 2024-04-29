@@ -31,7 +31,7 @@ The book starts out in the middle of a situation, resolves it, drops you into a 
 
 #### What I did not like
 * Well, for about the first fifth of the book I wasn't sure if I like it because of all the world building - but it payed off in the end
-* There is one specific instance of a key character acting very against their character development that really rubbed me the wrong way. It get's glossed over and it feels like the rest of the cast acts as if it did not happen a few pages later - I don't think the story gained anything by having it in. Overall not a huge deal, but I was quite pissed of for a few pages.
+* There is one specific instance of a key character acting very against their character development that really rubbed me the wrong way. It get's glossed over and it feels like the rest of the cast acts as if it did not happen a few pages later - I don't think the story gained anything by having it in. Overall not a huge deal, but I was quite pissed off for a few pages.
 * The main character could be described as very "edgy", which sets the tone for most of the book - I think it fits quite well, but might be a turn off for some
 
 #### You should read it
