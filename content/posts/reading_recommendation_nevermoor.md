@@ -5,7 +5,7 @@ tags: [reading, recommendation, book, audiobook, fantasy]
 ---
 Morrigan Crow is a cursed, almost 11 years old, child. As all cursed children in the Wintersea Republic, she is responsible for all accidents, mishaps und bad luck in her vicinity. Also, as all cursed children, she is supposed to die on her upcoming birthday.
 
-But, as she is the main character in the currently 3 books spanning series, that obviously doesn't happen. Instead, she escapes into the magical land of Evermoor. There she encounters huge talking cats, Wunimals (animal-like creatures with human intelligence), school drama and problems with the immigration office. Morrigan becomes best friends with a boy who loves to ride dragons and, of course, she has to face _The Antagonist_ - a dark figure everyone only refers to as The Wondersmith.
+But, as she is the main character in the currently 3 books spanning series, that obviously doesn't happen. Instead, she escapes into the magical land of Nevermoor. There she encounters huge talking cats, Wunimals (animal-like creatures with human intelligence), school drama and problems with the immigration office. Morrigan becomes best friends with a boy who loves to ride dragons and, of course, she has to face _The Antagonist_ - a dark figure everyone only refers to as The Wondersmith.
 
 ## That sounds pretty similar to a very popular book / film series, doesn't it?
 Yes, there are a lot of parallels to the Harry Potter series - a cursed child, who has some unknown potential, with very shitty family and uncanny bonds with the main antagonist.
