@@ -23,7 +23,7 @@ This is the start of the story. We get to know the protagonist, Gideon, as an ed
 
 The book starts out in the middle of a situation, resolves it, drops you into a way bigger situation and starts with world building, lore, and more world building. It really takes its time until stuff starts happening again - this is a common occurrence in all the Locked Tomb books. __But it pays off__ - the lore combined with the really intriguing plot (after it finally gets going) result in a super interesting and complex book that I want to re-read again soon to get all then little (and maybe not so little) intricacies I missed the first time - this is also a common occurrence in all the Locked Tomb books.
 
-#### What did I like
+#### What I liked
 * I love the world and its lore - it's very intriguing to me and surprised me often.
 * I really like the main protagonist
 * Character arc galore: in this book you get to know Gideon and 15 more characters, who all start out very one dimensional. You get to know a lot more about almost of all them, and a substantial amount of them experiences a very well written character arc. It's really fun to follow them and see them grow.
