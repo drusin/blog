@@ -3,7 +3,7 @@ title: "Reading recommendation: The Locked Tomb series by Tamsyn Muir"
 published: 2024-04-29
 tags: [book, audiobook, sci-fi, recommendation, horror, fantasy, dystopian, gideon, harrow, ninth]
 ---
-The Ninth House is not a nice place to live. The climate is harsh, almost nothing grows in the soil, the day and night cycle takes months. One is surrounded by a small, aging population and by animated skeletons that take care of manual work. And when someone does of old age or illness, their skeleton is reanimated through necromancy and joins the ranks of willless workers.   
+The Ninth House is not a nice place to live. The climate is harsh, almost nothing grows in the soil, the day and night cycle takes months. One is surrounded by a small, aging population and by animated skeletons that take care of manual work. And when someone dies of old age or illness, their skeleton is reanimated through necromancy and joins the ranks of willless workers.   
 Gideon is an 18 years old orphan and foundling, and wants to get off the planet for good. The only other person her age on the entire planet is Harrowhark Nonagesimus, a necromantic nun and heir to the Ninth House. Also, she hates Gideon and Gideon hates her, with a fiery passion.  
 On the day of Gideon's 87th attempt at escaping the planet, a correspondence from the __Emperor All-Giving, Necrolord Prime, Resurrection, King Undying__, or, a bit shorter and to-the-point - a correspondence from __God__, reaches the Ninth House and links the fates of both young women together.
 
@@ -21,10 +21,10 @@ The Locked Tomb is a series of dystopian adult science fantasy books by Tamsyn M
 ### Book 1: Gideon the Ninth
 This is the start of the story. We get to know the protagonist, Gideon, as an edgy and foul mouthed teenager who despises everything about her current life and her surroundings. And it's understandable - there is literally one person on the entire planet who doesn't hate her, she doesn't belong there and is not at all interested in the necromantic cult ruling the Ninth House. I found it quite easy to sympathize with Gideon and understand her motives and doings.
 
-The book starts out in the middle of a situation, resolves it, drops you into a way bigger situation and starts with world building, lore, and more world building. It really takes its time until stuff starts happening again - this is a common occurrence in all the Locked Tomb books. __But it pays off__ - the lore combined with the really intriguing plot (after it finally gets going) result in a super interesting and complex book that I want to re-read again soon to get all then little (and maybe not so little) intricacies I missed the first time - this is also a common occurrence in all the Locked Tomb books.
+The book starts out in the middle of a situation, resolves it, drops you into a way bigger situation and starts with world building, lore, and more world building. It really takes its time until stuff starts happening again - this is a common occurrence in all the Locked Tomb books. __But it pays off__ - the lore combined with the really intriguing plot (after it finally gets going) result in a super interesting and complex book that I want to re-read again soon to get all the little (and maybe not so little) intricacies I missed the first time - this is also a common occurrence in all the Locked Tomb books.
 
 #### What I liked
-* I love the world and its lore - it's very intriguing to me and surprised me often.
+* I love the world and its lore - I find it very intriguing and got caught off guard quite often
 * I really like the main protagonist
 * Character arc galore: in this book you get to know Gideon and 15 more characters, who all start out very one dimensional. You get to know a lot more about almost of all them, and a substantial amount of them experiences a very well written character arc. It's really fun to follow them and see them grow.
 * __The ending is awesome__
@@ -54,7 +54,7 @@ Then the world building and lore dumping starts, this time even move convoluted 
 
 But, again, it's really worth it. After something like half of the (audio) book, I found myself staying in the car after arriving at my destination just to hear a few more lines and see how the plot thickens (or continues).
 
-#### What did I like
+#### What I liked
 * I __love__ the world and all the lore of this series. Yes, sometimes it's a bit tedious to get through, but it's so worth it in my opinion
 * A book in the second person perspective was a very interesting experience, especially with all the "spiciness" mixed in
 * At some point, late in the book, a third perspective comes in: there are passages that are written in the first person perspective. It makes complete sense lore-wise, brings a very different point of view and vocabulary, and when it happened for the first time it was one of my favorite book moments in the last few years.
