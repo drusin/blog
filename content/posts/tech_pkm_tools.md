@@ -13,7 +13,7 @@ These are the requirements that a PKM tool should fulfill to be considered by me
 * The work should be synched between devices (but I don't mind if it requires a one time complicated setup)
 * The format should be at least somehow portable, in case I need to migrate to a different tool for whatever reason
 
-All the tools listed below use mostly Markdown under the hood, sometimes with excessive front matter, sometimes with some proprietary tags. But that's good enough to fulfill the "portability" requirement.
+All the tools listed below use mostly Markdown under the hood, sometimes with excessive front matter, sometimes with some proprietary tags. But that's good enough for me to fulfill the "portability" requirement.
 
 Here come the tools!
 
