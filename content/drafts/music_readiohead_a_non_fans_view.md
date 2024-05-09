@@ -15,7 +15,7 @@ I, like the rest of the world, know one song of this album - Creep. I don't know
 I don't know one song of the album. Next! 
 
 ### OK Computer
-This is it. This is The Album, the one that cemented Radiohead as The Gods Of Alternative Rock.... 
+This is it. This is _The Album_, the one that cemented Radiohead as The Gods Of Alternative Rock. If you want to give exactly one Radiohead album a go, __this one should be it__. 
 
 * __Paranoid Android__ ([YouTube](https://www.youtube.com/watch?v=fHiGbolFFGw), [Spotify](https://open.spotify.com/intl-de/track/6LgJvl0Xdtc73RJ1mmpotq?si=c4a3f8a521864d58)):
 * __Exit Music (For A Film)__ ([YouTube](https://www.youtube.com/watch?v=Bf01riuiJWA&pp=ygUUcmFkaW9oZWFkIGV4aXQgbXVzaWM%3D), [Spotify](https://open.spotify.com/intl-de/track/0z1o5L7HJx562xZSATcIpY?si=9aa7e30c24004120)):
@@ -44,12 +44,14 @@ This is it. This is The Album, the one that cemented Radiohead as The Gods Of Al
 * __Jigsaw Falling Into Place__ ([YouTube](https://www.youtube.com/watch?v=GoLJJRIWCLU&pp=ygUjcmFkaW9oZWFkIGppZ3NhdyBmYWxsaW5nIGludG8gcGxhY2U%3D), [Spotify](https://open.spotify.com/intl-de/track/0YJ9FWWHn9EfnN0lHwbzvV?si=a4f9910b28244dc4)):
 
 ### The King of Limbs
-* __Bloom__ ([YouTube](https://www.youtube.com/watch?v=IxBQ8Er8DYc&pp=ygUPcmFkaW9oZWFkIGJsb29t), [Spotify](https://open.spotify.com/intl-de/track/2HO0MwfNYxJa2zwo6vrQMT?si=2af01bed91914da1)):
-* __Give Up The Ghost__ ([YouTube](https://www.youtube.com/watch?v=QGGb7o7EbFs&pp=ygUbcmFkaW9oZWFkIGdpdmUgdXAgdGhlIGdob3N0), [Spotify](https://open.spotify.com/intl-de/track/05NZMYuLR71Z3qrZOUiUm2?si=a7e029131e324be5)):
+This is probably the most divisive album amongst Radiohead fans. The whole album has a very experimental premise: every song started out as a loop that one of the band members made that then got turned into a full song. I quite like two songs, but not the album versions. 
+* __Bloom__ ([YouTube](https://www.youtube.com/watch?v=IxBQ8Er8DYc&pp=ygUPcmFkaW9oZWFkIGJsb29t), [Spotify](https://open.spotify.com/intl-de/track/2HO0MwfNYxJa2zwo6vrQMT?si=2af01bed91914da1)): 
+* __Give Up The Ghost__ ([YouTube](https://www.youtube.com/watch?v=QGGb7o7EbFs&pp=ygUbcmFkaW9oZWFkIGdpdmUgdXAgdGhlIGdob3N0), [Spotify](https://open.spotify.com/intl-de/track/05NZMYuLR71Z3qrZOUiUm2?si=a7e029131e324be5)): One of the most beautiful Radiohead songs, at least in my opinion. Acoustic guitar, very light drum machine, a vocal loop and Thom Yorke's angle like singing. I love the "live from the basement" version, linked below.
 {% quote "Thom Yorke" "after performing <a href=\"https://www.youtube.com/watch?v=Z3klN8diaqw\">an angelic version of \"Give Up The Ghost\"</a>" %}
 Please tell me that sounded alright
 {% endquote %}
 
 ### A Moon Shaped Pool
-* __Burn the Witch__ ([YouTube](https://www.youtube.com/watch?v=yI2oS2hoL0k&pp=ygUYcmFkaW9oZWFkIGJ1cm4gdGhlIHdpdGNo), [Spotify](https://open.spotify.com/intl-de/track/3DpuYpzkvUWXbmzCm6pfzR?si=0062034c417348e9)):
-* __Ful Stop__ ([YouTube](https://www.youtube.com/watch?v=NHDOk7lA53w&pp=ygUScmFkaW9oZWFkIGZ1bCBzdG9w), [Spotify](https://open.spotify.com/intl-de/track/6nOsTV3cMjLh3k6Wpk468L?si=8a4f300a190049ba)): No, It's not a typo.
+An overall loved album by the fans and a great return to form for those who hated _The King of Limbs_. I... like two songs:
+* __Burn the Witch__ ([YouTube](https://www.youtube.com/watch?v=yI2oS2hoL0k&pp=ygUYcmFkaW9oZWFkIGJ1cm4gdGhlIHdpdGNo), [Spotify](https://open.spotify.com/intl-de/track/3DpuYpzkvUWXbmzCm6pfzR?si=0062034c417348e9)): Best album opener (3/3) - nice and sweet vocals, paired with dark lyrics and dissonant strings. This is one of the songs I wouldn't mind listening to on repeat. The stop motion music video in the style of a preschool children's series about visiting a cult-run village is really awesome. 
+* __Ful Stop__ ([YouTube](https://www.youtube.com/watch?v=NHDOk7lA53w&pp=ygUScmFkaW9oZWFkIGZ1bCBzdG9w), [Spotify](https://open.spotify.com/intl-de/track/6nOsTV3cMjLh3k6Wpk468L?si=8a4f300a190049ba)): No, It's not a typo. The song starts as a dark techno track with some spoken lines in 6/4 (at least that's how I feel it), then opens up and adds real drums, light guitars and vocals. There is multimeter, interesting harmonies and different parallel vocal lines. Not a lot of lyrics but a lot of atmosphere.
