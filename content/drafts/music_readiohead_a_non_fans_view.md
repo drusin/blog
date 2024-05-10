@@ -15,7 +15,7 @@ I, like the rest of the world, know one song of this album - Creep. I don't know
 I don't know one song of the album. Next! 
 
 ### OK Computer
-This is it. This is _The Album_, the one that cemented Radiohead as The Gods Of Alternative Rock. If you want to give exactly one Radiohead album a go, __this one should be it__. 
+This is it. This is _The Album_, the one that cemented Radiohead as The Gods Of Alternative Rock. If you want to give exactly one Radiohead album a go, __this one should be it__. It's the most popular Radiohead album on Spotify and its songs occupy spot 2 and 3 on the band's most streamed list. 
 
 * __Paranoid Android__ ([YouTube](https://www.youtube.com/watch?v=fHiGbolFFGw), [Spotify](https://open.spotify.com/intl-de/track/6LgJvl0Xdtc73RJ1mmpotq?si=c4a3f8a521864d58)):
 * __Exit Music (For A Film)__ ([YouTube](https://www.youtube.com/watch?v=Bf01riuiJWA&pp=ygUUcmFkaW9oZWFkIGV4aXQgbXVzaWM%3D), [Spotify](https://open.spotify.com/intl-de/track/0z1o5L7HJx562xZSATcIpY?si=9aa7e30c24004120)):
