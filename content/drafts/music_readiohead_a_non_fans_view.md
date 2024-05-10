@@ -15,10 +15,10 @@ I, like the rest of the world, know one song of this album - Creep. I don't know
 I don't know one song of the album. Next! 
 
 ### OK Computer
-This is it. This is _The Album_, the one that cemented Radiohead as The Gods Of Alternative Rock. If you want to give exactly one Radiohead album a go, __this one should be it__. It's the most popular Radiohead album on Spotify and its songs occupy spot 2 and 3 on the band's most streamed list. 
+This is it. This is _The Album_, the one that cemented Radiohead as The Gods Of Alternative Rock. If you want to give exactly one Radiohead album a go, __this one should be it__. It's the most popular Radiohead album on Spotify and its songs occupy spot 2 and 3 on the band's most streamed list. Let's have a look at my favourite songs:
 
-* __Paranoid Android__ ([YouTube](https://www.youtube.com/watch?v=fHiGbolFFGw), [Spotify](https://open.spotify.com/intl-de/track/6LgJvl0Xdtc73RJ1mmpotq?si=c4a3f8a521864d58)):
-* __Exit Music (For A Film)__ ([YouTube](https://www.youtube.com/watch?v=Bf01riuiJWA&pp=ygUUcmFkaW9oZWFkIGV4aXQgbXVzaWM%3D), [Spotify](https://open.spotify.com/intl-de/track/0z1o5L7HJx562xZSATcIpY?si=9aa7e30c24004120)):
+* __Paranoid Android__ ([YouTube](https://www.youtube.com/watch?v=fHiGbolFFGw), [Spotify](https://open.spotify.com/intl-de/track/6LgJvl0Xdtc73RJ1mmpotq?si=c4a3f8a521864d58)): What should you do if you have ideas for three different songs, but cannot figure out where to go with them? If you ask Radiohead: smush them together, add some lines in 7/8 for good measure and quote a depressed android from Douglas Adams' _The Hitchhiker's Guide to the Galaxy_. The result is an over 6min long hit single, often compared to Queen's _Bohemian Rhapsody_. While I'm not 100% sold on the electric guitar solo parts, they tie the other parts of the sting together, and those are __exquisite__. Also, the lyrics are so immensly quotable, I was considering only using quotes from this song in this blog post. As a whole, I consider Paranoid Android to be a __masterpiece__. Not a fan of the music video, though.
+* __Exit Music (For A Film)__ ([YouTube](https://www.youtube.com/watch?v=Bf01riuiJWA&pp=ygUUcmFkaW9oZWFkIGV4aXQgbXVzaWM%3D), [Spotify](https://open.spotify.com/intl-de/track/0z1o5L7HJx562xZSATcIpY?si=9aa7e30c24004120)): Spoiler: it is the credits song for the 1995 movie _Romeo and Juliet_ and the lyrics kind of work as the summary of the plot. 
 * __Climbing Up the Walls__ ([YouTube](https://www.youtube.com/watch?v=XX4EpkR-Sp4&pp=ygUfcmFkaW9oZWFkIGNsaW1iaW5nIHVwIHRoZSB3YWxscw%3D%3D), [Spotify](https://open.spotify.com/intl-de/track/2PDQReEXBViVwkrbQ34vd7?si=6a95ec06c860444e)):
 
 ### Kid A
