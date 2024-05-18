@@ -1,20 +1,23 @@
 ---
 title: "Reading recommendation: The Locked Tomb series by Tamsyn Muir"
 published: 2024-04-29
+modified: 2024-05-18
 tags: [book, audiobook, sci-fi, recommendation, horror, fantasy, dystopian, gideon, harrow, ninth]
+edits:
+  - "2024-05-18: Added review of Nona the Ninth after finishing the book"
 ---
 The Ninth House is not a nice place to live. The climate is harsh, almost nothing grows in the soil, the day and night cycle takes months. One is surrounded by a small, aging population and by animated skeletons that take care of manual work. And when someone dies of old age or illness, their skeleton is reanimated through necromancy and joins the ranks of willless workers.   
 Gideon is an 18 years old orphan and foundling, and wants to get off the planet for good. The only other person her age on the entire planet is Harrowhark Nonagesimus, a necromantic nun and heir to the Ninth House. Also, she hates Gideon and Gideon hates her, with a fiery passion.  
 On the day of Gideon's 87th attempt at escaping the planet, a correspondence from the __Emperor All-Giving, Necrolord Prime, Resurrection, King Undying__, or, a bit shorter and to-the-point - a correspondence from __God__, reaches the Ninth House and links the fates of both young women together.
 
 ## Content warning?
-This series contains a lot of (sometimes quite graphical) violence, a lot of swearing and some gore or body horror (it's about necromancers after all). It also deals with trauma, self-harm and suicide.
+This series contains a lot of (sometimes quite graphical) violence, a lot of swearing and some gore or body horror (it's about necromancers after all). It also deals with topics like trauma, self-harm and suicide.
 
 ### You should know your anatomy vocabulary (or be prepared to look it up)
 Sometimes very specific bones, muscles, organs or body parts are mentioned, used or described. I read the first book in German and was fine most of the time, but then the second book in English and struggled a bit with this specific vocabulary.
 
 ## What?
-The Locked Tomb is a series of dystopian adult science fantasy books by Tamsyn Muir. It takes place about ten thousand years in the future, probably in a part of the milky way, and necromancy in many different forms is running the world. The fourth and final book __Alecto the Ninth__ is expected to release somewhen 2024.
+The Locked Tomb is a series of dystopian adult science fantasy books by Tamsyn Muir featuring a lot of queer characters. It takes place about ten thousand years in the future, probably in a part of the milky way, and necromancy in many different forms is running the world. The fourth and final book __Alecto the Ninth__ is expected to release somewhen 2024. A very popular tagline for the series, given by its fans, is __"Lesbian Necromancers in space"__.
 
 ## Let's talk about the books one by one:
 
@@ -70,10 +73,50 @@ But, again, it's really worth it. After something like half of the (audio) book,
 If you liked Gideon the Ninth - yes, without any question.
 
 ### Book 3: Nona the Ninth
-I'm not even 1/5 in, so I'll update the post afterwards. Here are some impressions so far:
+My initial thoughts after being ~1/5 in (but I'm done now, just leaving these three bullet points in for completeness sake):
 * Contrary to the first two books, I wasn't a fan of the main cast at the start, but they started growing on me
 * As it is law, the first 3h of the audio book were 100% exposition and world building (it feels like stuff might start happening any minute now)
 * Some between-chapter-sections start showing a link between 20th century earth and the book series' world, which is quite interesting
 
+#### Apparently, this was not the book that the author planned to write
+The original plan was for the _Locked Tomb_ to be a trilogy: Gideon, Harrow and Alecto. But, during writing the third tome, Nona came and needed her own book.
+
+{% quote 'Carl Engle-Lair, Editor' '<a href="https://reactormag.com/announcing-nona-the-ninth-a-new-addition-to-the-locked-tomb-series-from-tamsyn-muir/#more-654923">Announcing Nona the Ninth, a New Addition to The Locked Tomb Series From Tamsyn Muir!</a>' %}
+Tamsyn Muir and I were as surprised as anyone when Nona arrived, bursting forth from Alecto the Ninth with an irrepressible energy and presence. She could not be contained, and demanded her own volume.
+{% endquote %}
+
+#### So, what is the book about?
+Let me try to do this without spoilers for the previous books -  
+Nona is a six months old soul in a body of an 18 years old woman. She has the mental and physical capabilities of an elementary school child, except for the small fact that her body can heal injuries within seconds. Nona lives together with a few (side) characters, known to the reader from the previous books, in a city in the middle of a civil war rebelling against the necromantic empire, filled with people full of panic, doubts and superstitions about anything that seems connected to necromancy at all. She works as a teacher's aide (where her main task is taking Noodle, a six legged poodle, on a walk during the science class) and is part of a gang of middle-schoolers. Then stuff happens.
+
+#### It feels very different to the first two books
+Even if in the second book the perspective is very unusual and different from the first one, it still was about lesbian necromancers in space. This book is about a child trying to understand itself, others, the cruel world around it and doing its best to blend in. At some point the story manages to find its way to being more about lesbian necromancers, but  
+it  
+takes  
+_sooooo_  
+__loooong__  
+to  
+get  
+going...
+
+#### Sooooo loooong?
+In my opinion, one could say that almost half of the book, with some very brief action injected in-between, can be called "exposition". Next to Nona's story, we get some dream-like flashbacks where we learn the story of how earth died (literally today's earth, there is even a "Twilight" reference) and how God became God.
+
+#### Let's do it the other way round this time: what did I not like about Nona the Ninth
+* It took me quite a while to get used to the whole settings and to the characters, especially to Nona and the people living together with her
+* The huge amount of (still mostly quite interesting) exposition made this book the hardest of the three to get through
+* It ends on the harshest cliffhanger yet
+
+#### What I liked
+* After getting over my initial dislike, I saw the light - Nona is the sweetest, cutest and loveliest being in all universe, it's impossible not to love her
+* The link back to 21 century's earth is super interesting, and also full of "omg, no he didn't"s
+* Some characters from the previous books are reprised, but in a unexpected way or context
+* The perspective from outside of the empire is very intriguing - we are basically the enemy now, compared to the first two books
+* When stuff finally gets going - boy oh boy, it get's going. I found myself not wanting to get of my car after arriving because the audio book was so exciting
+* The ending is awesome
+
+#### Should you read it?
+The toughest one to recommend, but overall I really liked the book - Nona, the overall story and the history about creation of the empire. So I would say, if you can stomach a vastly different setting and power through a lot of exposition (and you liked the previous books) - __then this book is for you!__
+
 ## Closing remarks
-That's it from me for now - the first two books are awesome, the third might also be and the forth one is not out yet. I'll be back in this post when I'm done with Nona.
+That's it from me for now - the first two books are awesome, the third is a bit harder to get through but overall still awesome, really looking forward to the resolution of the story in _Alecto_. Also, one more thing I did not mention in the individual book reviews: Tamsyn Muir's writing style is nothing short of awesome, full of humour and sarcasm and __so immensely quotable__.
