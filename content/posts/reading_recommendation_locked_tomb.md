@@ -2,7 +2,7 @@
 title: "Reading recommendation: The Locked Tomb series by Tamsyn Muir"
 published: 2024-04-29
 modified: 2024-05-18
-tags: [book, audiobook, sci-fi, recommendation, horror, fantasy, dystopian, gideon, harrow, ninth]
+tags: [book, audiobook, sci-fi, recommendation, horror, fantasy, dystopian, gideon, harrow, nona, alecto, ninth]
 edits:
   - "2024-05-18: Added review of Nona the Ninth after finishing the book"
 ---
