@@ -1,11 +1,12 @@
 ---
 title: "Tutorial: How to setup your 11ty project for GitHub Pages"
 published: 2024-02-09
-modified: 2024-04-05
+modified: 2024-06-02
 tags: [11ty, github, ci, tutorial]
 edits:
   - "2024-02-11: Using GitHub Actions documented"
   - "2024-04-05: Clarifications, finishing touches"
+  - "2024-06-02: fixed github token line being eaten by liquid" 
 ---
 [11ty](https://www.11ty.dev/) is an awesome (and super fast) static site generator and [GitHub Pages](https://pages.github.com/) is a nice and free way to host a static website. The [11ty Deployment Documentation](https://www.11ty.dev/docs/deployment/) even mentions GitHub Pages, but doesn't document the small config changes you have to do to make your 11ty page work there. This post goes over two 11ty setups for GitHub Pages: one simple but a bit clunky, and one slightly more involved but also more comfortable in the end.
 
@@ -134,7 +135,7 @@ The annoyance with the solution above is that you have to do the building of the
             uses: peaceiris/actions-gh-pages@v3
             with:
               # this line is needed for the action to be able to push something to your repository
-              github_token: ${{ secrets.GITHUB_TOKEN }}
+              github_token: {% raw %}${{ secrets.GITHUB_TOKEN }}{% endraw %}
               publish_dir: ./_site
     ```
     2. If you you have a custom folder, change the value of `publish_dir` above accordingly
