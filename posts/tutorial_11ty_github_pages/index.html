@@ -34,7 +34,7 @@
         <p>
             <em>
 Published: 2024-02-09
- - Last modified: 2024-04-05 
+ - Last modified: 2024-06-02 
 </em>
             <br />
             <em>
@@ -51,6 +51,10 @@ Published: 2024-02-09
         
         <p class="edit">
             <em>2024-04-05: Clarifications, finishing touches</em>
+        </p>
+        
+        <p class="edit">
+            <em>2024-06-02: fixed github token line being eaten by liquid</em>
         </p>
         
         
@@ -201,7 +205,7 @@ module<span class="token punctuation">.</span><span class="token function-variab
         <span class="token key atrule">uses</span><span class="token punctuation">:</span> peaceiris/actions<span class="token punctuation">-</span>gh<span class="token punctuation">-</span>pages@v3
         <span class="token key atrule">with</span><span class="token punctuation">:</span>
           <span class="token comment"># this line is needed for the action to be able to push something to your repository</span>
-          <span class="token key atrule">github_token</span><span class="token punctuation">:</span> $
+          <span class="token key atrule">github_token</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.GITHUB_TOKEN <span class="token punctuation">}</span><span class="token punctuation">}</span>
           <span class="token key atrule">publish_dir</span><span class="token punctuation">:</span> ./_site</code></pre>
 <ol start="2">
 <li>If you you have a custom folder, change the value of <code>publish_dir</code> above accordingly</li>
