@@ -34,7 +34,7 @@
         <p>
             <em>
 Published: 2024-02-09
- - Last modified: 2024-06-02 
+ - Last modified: 2024-07-06 
 </em>
             <br />
             <em>
@@ -55,6 +55,10 @@ Published: 2024-02-09
         
         <p class="edit">
             <em>2024-06-02: fixed github token line being eaten by liquid</em>
+        </p>
+        
+        <p class="edit">
+            <em>2024-07-06: Added instructions to allow GH Actions to write to the repository</em>
         </p>
         
         
@@ -215,6 +219,15 @@ module<span class="token punctuation">.</span><span class="token function-variab
 <p>Push the changes to GitHub</p>
 </li>
 <li>
+<p>Allow GitHub Actions to write to your repository:</p>
+<ol>
+<li>Open the GitHub webpage page of your repository</li>
+<li>(Repository) Settings -&gt; Actions -&gt; General</li>
+<li>Scroll down to &quot;Workflow permissions&quot;</li>
+<li>Select &quot;Read and write permissions&quot; and press &quot;Save&quot;</li>
+</ol>
+</li>
+<li>
 <p>Setup GitHub Pages for the repository:</p>
 <ol>
 <li>Open the GitHub webpage page of your repository</li>
@@ -222,6 +235,7 @@ module<span class="token punctuation">.</span><span class="token function-variab
 <li>Source: <code>Deploy from a branch</code></li>
 <li>Branch: <code>gh-pages</code></li>
 <li>Folder: <code>root</code></li>
+<li>Press &quot;Save&quot;</li>
 </ol>
 </li>
 </ol>
