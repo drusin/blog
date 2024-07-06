@@ -1,12 +1,13 @@
 ---
 title: "Tutorial: How to setup your 11ty project for GitHub Pages"
 published: 2024-02-09
-modified: 2024-06-02
+modified: 2024-07-06
 tags: [11ty, github, ci, tutorial]
 edits:
   - "2024-02-11: Using GitHub Actions documented"
   - "2024-04-05: Clarifications, finishing touches"
   - "2024-06-02: fixed github token line being eaten by liquid" 
+  - "2024-07-06: Added instructions to allow GH Actions to write to the repository"
 ---
 [11ty](https://www.11ty.dev/) is an awesome (and super fast) static site generator and [GitHub Pages](https://pages.github.com/) is a nice and free way to host a static website. The [11ty Deployment Documentation](https://www.11ty.dev/docs/deployment/) even mentions GitHub Pages, but doesn't document the small config changes you have to do to make your 11ty page work there. This post goes over two 11ty setups for GitHub Pages: one simple but a bit clunky, and one slightly more involved but also more comfortable in the end.
 
@@ -140,12 +141,18 @@ The annoyance with the solution above is that you have to do the building of the
     ```
     2. If you you have a custom folder, change the value of `publish_dir` above accordingly
 5. Push the changes to GitHub
-6. Setup GitHub Pages for the repository:
+6. Allow GitHub Actions to write to your repository:
+    1. Open the GitHub webpage page of your repository
+    2. (Repository) Settings -> Actions -> General
+    3. Scroll down to "Workflow permissions"
+    4. Select "Read and write permissions" and press "Save"
+7. Setup GitHub Pages for the repository:
     1. Open the GitHub webpage page of your repository
     2. (Repository) Settings -> Code and automation / Pages
     3. Source: `Deploy from a branch`
     4. Branch: `gh-pages`
     5. Folder: `root`
+    6. Press "Save"
 
 Now, after each push to the `main` branch, at first the `Deploy GH Pages` workflow will build your page and push it to `gh-pages` and afterwards the GitHub built-in workflow `pages-build-deployment` will publish the content on GitHub Pages.
 
