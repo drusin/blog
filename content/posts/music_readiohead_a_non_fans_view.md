@@ -1,6 +1,7 @@
 ---
 title: "Music: Radiohead - a non-fan's view"
 tags: [music, thoughtpiece, alternative]
+published: 2024-09-08
 quote_author: Radiohead
 ---
 Radiohead is a british alternative rock band with the reputation of most of their music being sad, depressive and overall not approachable. You basically have to make a deep dive and become a hardcore fan to like their material. But I don't think it's true - I like a lot of their material, but don't enjoy or don't care for a lot of the rest of it. I want to take you along and highlight a bunch of songs that even non-Radiohead-fans can enjoy.
