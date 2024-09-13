@@ -35,7 +35,7 @@ What made me fall out of love with the Harry Potter series, is that...
 _Backstory over ;)_
 </details>
 
-## What I enjoyed in the Newvemoor book series
+## What I enjoyed in the Nevemoor book series
 First and foremost - the atmosphere. It was really for the first time since reading the first Harry Potter book as a child that I felt sucked into this magical and wondrous world. I wanted to know every detail about the society, customs, creatures, etc.  
 I found Morrigan to be a very likable character, her actions, reactions, thoughts and feelings were very understandable for me.  
 There are a lot of interesting characters - many are likable, many are mysterious, some are unlikable - but none of them are boring.  
