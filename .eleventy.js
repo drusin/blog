@@ -1,8 +1,8 @@
-const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const customLiquid = require("./custom-liquid");
+import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import { sortPosts, quote, paragraph } from "./custom-liquid.js";
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   // needed for pathprefix to work in npm run code-server
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   
@@ -13,9 +13,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "node_modules/@picocss/pico/css/pico.min.css": "pico.min.css" });
   eleventyConfig.addPassthroughCopy({ "node_modules/prismjs/themes/prism-okaidia.min.css": "prism-okaidia.min.css" });
 
-  eleventyConfig.addFilter("sortPosts", customLiquid.sortPosts);
-  eleventyConfig.addPairedShortcode("quote", customLiquid.quote);
-  eleventyConfig.addShortcode("p", customLiquid.paragraph);
+  eleventyConfig.addFilter("sortPosts", sortPosts);
+  eleventyConfig.addPairedShortcode("quote", quote);
+  eleventyConfig.addShortcode("p", paragraph);
 
   return {
     dir: {
