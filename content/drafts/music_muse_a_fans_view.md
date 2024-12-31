@@ -62,3 +62,7 @@ quote_author: Muse
 * Break It To Me
 
 ### Will Of The People ###
+* Compliance
+* Won't Stand Down
+* Kill Or Be Killed
+* We Are Fucking Fucked
