@@ -56,4 +56,9 @@ quote_author: Muse
 * Drones
 
 ### Simulation Theory ###
-* 
+* Algorithm
+* The Dark Side
+* Propaganda
+* Break It To Me
+
+### Will Of The People ###
