@@ -1,3 +1,7 @@
+---
+title: "newborn baby experience"
+tags: [baby, thoughtpiece]
+---
 Poo comes out with the force of a thousand suns
 
 A big challenge during breast feeding is to make sure the baby doesn't fall asleep for half an hour (unless you want to feed again in 15min)
