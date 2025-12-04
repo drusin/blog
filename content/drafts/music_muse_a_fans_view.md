@@ -68,4 +68,4 @@ Muse
 * Kill Or Be Killed
 * We Are Fucking Fucked
 
-It's a good band! 
+It's a good band! Yes, really! 
