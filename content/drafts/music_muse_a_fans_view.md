@@ -67,3 +67,5 @@ Muse
 * Won't Stand Down
 * Kill Or Be Killed
 * We Are Fucking Fucked
+
+It's a good band! 
